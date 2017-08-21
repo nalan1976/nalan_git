@@ -1,0 +1,28 @@
+class Annoyance extends Exception {}
+class Sneeze extends Annoyance {}
+
+class TempTest2 {
+
+    public static void main(String[] args) 
+        throws Exception {
+        try {
+            try {
+                throw new Annoyance();
+            } 
+            catch ( Sneeze a ) {
+                System.out.println("Caught Annoyance");
+                throw a;
+            }
+            finally {
+                System.out.println("Caught Annoyance finally");
+            }
+        } 
+        catch ( Annoyance s ) {
+            System.out.println("Caught Sneeze");
+            return ;
+        }
+        finally {
+            System.out.println("Hello World!");
+        }
+    }
+}
