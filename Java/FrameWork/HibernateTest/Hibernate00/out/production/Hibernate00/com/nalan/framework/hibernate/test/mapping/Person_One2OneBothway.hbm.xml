@@ -12,3 +12,4 @@
     </class>
 </hibernate-mapping>
         <!--通过uique=“true”将多对一映射限定为一对一-->
+        <!--cascade="all"-->
