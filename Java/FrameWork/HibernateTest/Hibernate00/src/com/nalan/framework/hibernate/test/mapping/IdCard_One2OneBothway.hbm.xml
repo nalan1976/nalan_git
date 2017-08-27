@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.nalan.framework.hibernate.test.mapping.One2OneBothway$IdCard" table="t_idcard">
+        <id name="id" column="id">
+            <generator class="native"/></id>
+        <property name="cardNo"/>
+        <one-to-one name="person"
+                    property-ref="idCard"/>
+    </class>
+</hibernate-mapping>
+        <!--<one-to-one>标签：告诉hibernate如何加载其关联对象
+            property-ref属性：是根据哪个字段进行比较加载数据 -->
+        <!--class="com.nalan.framework.hibernate.test.mapping.One2OneBothway$Person"-->
