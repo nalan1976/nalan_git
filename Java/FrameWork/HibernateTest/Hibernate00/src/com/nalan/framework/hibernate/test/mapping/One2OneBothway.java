@@ -1,32 +1,9 @@
 package com.nalan.framework.hibernate.test.mapping;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
 import com.nalan.util.hibernate.HibernateUtil;
-import java.util.concurrent.TimeUnit;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-//import static jdk.nashorn.internal.objects.Global.load;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl;
-//import org.hibernate.metadata.ClassMetadata;
-//import org.hibernate.boot.spi.MetadataImplementor;
-
 
 public class One2OneBothway {
     /** 人－实体类 */
-    private static HibernateUtil sf = new HibernateUtil();
-    private static SessionFactory sessionFactory;
-    static{
-        StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder().configure().build();
-        Metadata metadata = new MetadataSources(standardRegistry).getMetadataBuilder() .applyImplicitNamingStrategy(ImplicitNamingStrategyComponentPathImpl.INSTANCE).build();
-        sessionFactory = metadata.getSessionFactoryBuilder().build();
-//        sessionFactory = new Configuration().configure().buildSessionFactory();
-        sf.setSessionFactory(sessionFactory);
-    }
-
-
     public static class Person {
         private int id;
         private String name;
@@ -44,7 +21,6 @@ public class One2OneBothway {
     }
 
     /**身份证-实体类*/
-
     public static class IdCard {
         private int id;
         private String cardNo;
@@ -62,12 +38,8 @@ public class One2OneBothway {
     }
 
     public static void One2OneBothwayCall(){
-//        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-//
-//        HibernateUtil sf = new HibernateUtil();
-//        sf.setSessionFactory(sessionFactory);
 
-        Session session = sf.getCurrentSession();
+        Session session = HibernateUtil.getCurrentSession();
         session = HibernateUtil.getCurrentSession();
         session.beginTransaction();
 
@@ -85,8 +57,6 @@ public class One2OneBothway {
         person1.setName("张三");
         person1.setIdCard(idCard);
 
-//        idCard.setPerson(person);
-//        idCard2.setPerson(person1);
         //可以只保存idCard但不能只保存person，why？
         session.save(person);
         session.save(person1);
@@ -96,51 +66,11 @@ public class One2OneBothway {
         //但t_person表中的idcard列直到执行完commit才填充？
         session.getTransaction().commit();
 
-/*        try {
-            TimeUnit.MILLISECONDS.sleep(1000);
-        } catch(InterruptedException e) {}
-
-//        session.clear();
-        session.beginTransaction();
-
-//        One2OneBothway.Person person2 = new One2OneBothway().new Person();
-//        person2.setName("张三");
-//        person2.setIdCard(idCard2);
-//        session.update(person2);
-//        session.saveOrUpdate((person2));
-
-        person = (One2OneBothway.Person)session.load(One2OneBothway.Person.class, 2);
-        System.out.println("person.name=" + person.getName());
-        System.out.println("person.cardNo=" + person.getIdCard().getCardNo());
-
-        idCard = (One2OneBothway.IdCard)session.load(One2OneBothway.IdCard.class, 1);
-        System.out.println("idCard.cardNo=" + idCard.getCardNo());
-        System.out.println("idCard.person.name=" + idCard.getPerson().getName());*/
-
-//        session.getTransaction().commit();
-
         session.close();
-//        sessionFactory.close();
-
-
     }
     public static void getObject(){
-/*        StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder().configure().build();
-        Metadata metadata = new MetadataSources(standardRegistry).getMetadataBuilder() .applyImplicitNamingStrategy(ImplicitNamingStrategyComponentPathImpl.INSTANCE).build();
-        SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();*/
-
-//        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-
-//        HibernateUtil sf = new HibernateUtil();
-//        sf.setSessionFactory(sessionFactory);
-
-//        Session session = sf.getCurrentSession();
         Session session = HibernateUtil.getCurrentSession();
         session.beginTransaction();
-
-//        One2OneBothway.IdCard idCard = new One2OneBothway().new IdCard();
-//
-//        One2OneBothway.Person person = new One2OneBothway().new Person();
 
         Person person = session.get(Person.class, 2);
                 //byId(One2OneBothway.Person.class).load(2);
@@ -152,18 +82,16 @@ public class One2OneBothway {
         System.out.println("idCard.cardNo=" + idCard.getCardNo());
         System.out.println("idCard.person.name=" + idCard.getPerson().getName());
 
-
         session.getTransaction().commit();
 
         session.close();
-//        sessionFactory.close();
     }
     public static void main(String args[]){
 //        One2OneUnilateralismForeignKeyCall();
         One2OneBothwayCall();
-
         getObject();
 
-        sessionFactory.close();
+        HibernateUtil.close();
+//        System.out.println(org.hibernate.cfg.Environment.VERSION);
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.nalan.framework.hibernate.test.mapping.One2OnePrimaryKeyBothway$Address121PB" table="address121pb">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <!-- class="foreign": 一对一主键映射中，使用另外一个相关联的对象的标识符 -->
+            <generator class="foreign">
+                <!--person到底是什么？与onetoone中的person含义相同？-->
+                <param name="property">person</param>
+            </generator>
+        </id>
+        <property name="detail" type="java.lang.String">
+            <column name="detail" length="120" not-null="true">
+                <comment>详细地址</comment>
+            </column>
+        </property>
+        <!-- 表示在address表存在一个外键约束，外键参考相关联的类Person121PB，这里的person是本类中Person121PB型的属性值 -->
+        <one-to-one name="person" constrained="true" />
+    </class>
+</hibernate-mapping>

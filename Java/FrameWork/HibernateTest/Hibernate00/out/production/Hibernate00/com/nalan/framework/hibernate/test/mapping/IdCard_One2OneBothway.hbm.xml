@@ -10,9 +10,6 @@
         <one-to-one name="person" property-ref="idCard"/>
     </class>
 </hibernate-mapping>
-        <!--<one-to-one>标签：告诉hibernate如何加载其关联对象
-            property-ref属性：是根据哪个字段进行比较加载数据 -->
-        <!--class="com.nalan.framework.hibernate.test.mapping.One2OneBothway$Person"-->
-
-
-        <!--property-ref="idCard"-->
+        <!--<one-to-one>标签：告诉hibernate如何加载其关联对象：与idCard关联的对象是Person
+            property-ref属性：是根据哪个字段进行比较加载数据，若无此字段则默认与Person主键：id关联
+            -->

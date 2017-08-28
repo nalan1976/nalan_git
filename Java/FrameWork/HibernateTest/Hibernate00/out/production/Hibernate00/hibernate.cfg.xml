@@ -21,6 +21,8 @@
         <!--<mapping resource="Students.hbm.xml"/>-->
         <mapping resource="com/nalan/framework/hibernate/test/mapping/Person_One2OneBothway.hbm.xml"/>
         <mapping resource="com/nalan/framework/hibernate/test/mapping/IdCard_One2OneBothway.hbm.xml"/>
+        <mapping resource="com/nalan/framework/hibernate/test/mapping/Person121PB_pk_bothway.hbm.xml"/>
+        <mapping resource="com/nalan/framework/hibernate/test/mapping/Address121PB_pk_bothway.hbm.xml"/>
 
         <!-- DB schema will be updated if needed -->
          <!--<property name="hbm2ddl.auto">update</property>-->

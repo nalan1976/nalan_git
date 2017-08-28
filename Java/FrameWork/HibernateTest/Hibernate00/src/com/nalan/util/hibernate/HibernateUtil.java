@@ -4,17 +4,18 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.HibernateException;
 //import org.hibernate.Transaction;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
 public class HibernateUtil {
-    private static SessionFactory sessionFactory = null;
-
-    public void setSessionFactory(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
-
+    private static final SessionFactory sessionFactory ;
 //    private static final SessionFactory sessionFactory;
-//    static {
+    static {
+        //for Hibernate 4.x
 //        try {
 //            // Create the SessionFactory from hibernate.cfg.xml
 //            sessionFactory = new Configuration().configure().buildSessionFactory();
@@ -23,7 +24,17 @@ public class HibernateUtil {
 //            System.err.println("初始化SessionFactory失败！" + ex);
 //            throw new ExceptionInInitializerError(ex);
 //        }
-//    }
+        try {
+            //for Hibernate 5.x
+            StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder().configure().build();
+            Metadata metadata = new MetadataSources(standardRegistry).getMetadataBuilder().applyImplicitNamingStrategy(ImplicitNamingStrategyComponentPathImpl.INSTANCE).build();
+            sessionFactory = metadata.getSessionFactoryBuilder().build();
+        }catch(Throwable ex) {
+            // Make sure you log the exception, as it might be swallowed
+            System.err.println("初始化SessionFactory失败！" + ex);
+            throw new ExceptionInInitializerError(ex);
+        }
+    }
     public static final ThreadLocal session = new ThreadLocal();
     public static Session getCurrentSession() throws HibernateException {
         Session s = (Session) session.get();
@@ -34,6 +45,11 @@ public class HibernateUtil {
         }
         return s;
     }
+    public static void close(){
+        if(sessionFactory != null)
+            sessionFactory.close();
+    }
+    //不怎么会用到
     public static void closeSession() throws HibernateException {
         Session s = (Session) session.get();
         session.set(null);
