@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+
+    <class name="One2OneJoinTableOneway$Address121tab1way" table="address_tab1way">
+        <id name="addressid">
+            <!--特意将identity改为assigned，测试addressid中间表的连接是否正常-->
+            <generator class="assigned"/>
+        </id>
+        <property name="addressdetail"/>
+    </class>
+</hibernate-mapping> 

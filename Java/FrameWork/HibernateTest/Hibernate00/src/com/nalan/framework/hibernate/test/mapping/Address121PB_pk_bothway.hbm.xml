@@ -8,7 +8,7 @@
             <column name="id" />
             <!-- class="foreign": 一对一主键映射中，使用另外一个相关联的对象的标识符 -->
             <generator class="foreign">
-                <!--person到底是什么？与onetoone中的person含义相同？-->
+                <!--指定该主键的值将根据person属性引用的关联实体（Person类）的主键（id）来生成-->
                 <param name="property">person</param>
             </generator>
         </id>

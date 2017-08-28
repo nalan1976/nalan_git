@@ -3,7 +3,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.nalan.framework.hibernate.test.mapping.One2OnePrimaryKeyBothway$Person121PB" table="person121pb">
+    <class name="com.nalan.framework.hibernate.test.mapping.One2OnePrimaryKeyBothway$Person121PB" table="person_tab1way">
         <id name="id" type="java.lang.Long">
             <column name="id" />
             <generator class="identity" />

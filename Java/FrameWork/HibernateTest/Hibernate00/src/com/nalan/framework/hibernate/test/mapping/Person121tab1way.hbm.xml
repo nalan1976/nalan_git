@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+    <class name="One2OneJoinTableOneway$Person121tab1way" table="person_tab1way">
+        <id name="personid">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="age"/>
+        <!--使用join元素显式确定链接表-->
+        <join table="join_11tab">
+            <!--映射连接表中参照本表主键的外键列-->
+            <key column="personid"/>
+            <!--映射1-1关联属性，其中unique=“true”属性确定为“1-1”-->
+            <!--映射连接表中参照关联实体的外键列-->
+            <many-to-one name="address11tab" unique="true" column="addressid"/>
+        </join>
+    </class>
+</hibernate-mapping> 
