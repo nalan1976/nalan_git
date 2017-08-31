@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+    <class name="One2OneJoinTableBothway$Person121tab2way" table="person_tab2way">
+        <id name="personid">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="age"/>
+        <!--optional如果打开，Hibernate 只会在此连接定义的属性非空时插入一行数据，并且总是使用一个外连接来得到这些属性-->
+        <join table="join_11tab_sx" optional="true">
+            <key column="personid"
+                 unique="true"/>
+            <many-to-one name="address11tab_sx"
+                         column="addressid"
+                         not-null="true"
+                         unique="true"/>
+        </join>
+    </class>
+</hibernate-mapping> 

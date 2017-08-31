@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+    <class name="One2OneJoinTableBothway$Address121tab2way" table="ADDRESS_11tab_sx">
+    <id name="addressid">
+        <generator class="identity"/>
+    </id>
+        <!--inverse="true"说明由对方维护关系-->
+    <property name="addressdetail"/>
+        <join table="join_11tab_sx"
+          optional="true"
+          inverse="true">
+            <key column="addressid"
+                 unique="true"/>
+            <many-to-one name="person11tab_sx" column="personid"
+                         not-null="true" unique="true"/>
+        </join>
+    </class>
+</hibernate-mapping>
