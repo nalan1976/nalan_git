@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+
+    <class name="One2MulFKTwoway$Person1nfk_sx" table="PERSON_1nfk_sx">
+        <id name="personid">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="age"/>
+        <!--映射集合属性，关联到持久化类，对方维护关系-->
+        <set name="addresses" inverse="true" cascade="all">
+            <!--column用于指定外键列名-->
+            <key column="personid" not-null="true"/>
+            <!--映射关联类-->
+            <one-to-many class="One2MulFKTwoway$Address1nfk_sx"/>
+        </set>
+    </class>
+</hibernate-mapping> 

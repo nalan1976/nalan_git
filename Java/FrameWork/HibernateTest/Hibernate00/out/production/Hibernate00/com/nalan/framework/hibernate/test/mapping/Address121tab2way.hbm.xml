@@ -9,7 +9,7 @@
     </id>
         <!--inverse="true"说明由对方维护关系-->
     <property name="addressdetail"/>
-    <join table="join_11tab_sx"
+        <join table="join_11tab_sx"
           optional="true"
           inverse="true">
             <key column="addressid"

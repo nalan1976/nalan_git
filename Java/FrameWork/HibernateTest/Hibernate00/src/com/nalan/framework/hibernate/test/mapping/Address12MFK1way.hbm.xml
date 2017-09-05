@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+
+    <class name="One2MulFKOneway$Address1nfk" table="ADDRESS_1nfk">
+        <id name="addressid">
+            <generator class="identity"/>
+        </id>
+        <property name="addressdetail"/>
+    </class>
+</hibernate-mapping> 

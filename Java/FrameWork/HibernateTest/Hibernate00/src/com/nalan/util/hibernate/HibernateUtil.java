@@ -49,7 +49,7 @@ public class HibernateUtil {
         if(sessionFactory != null)
             sessionFactory.close();
     }
-    //不怎么会用到
+    //session还是需要关闭的
     public static void closeSession() throws HibernateException {
         Session s = (Session) session.get();
         session.set(null);

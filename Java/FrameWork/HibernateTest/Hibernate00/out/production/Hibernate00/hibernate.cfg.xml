@@ -25,8 +25,17 @@
         <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address121PB_pk_bothway.hbm.xml"/>-->
         <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Person121tab1way.hbm.xml"/>-->
         <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address121tab1way.hbm.xml"/>-->
-        <mapping resource="com/nalan/framework/hibernate/test/mapping/Person121tab2way.hbm.xml"/>
-        <mapping resource="com/nalan/framework/hibernate/test/mapping/Address121tab2way.hbm.xml"/>
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Person121tab2way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address121tab2way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Person12MFK1way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address12MFK1way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Person12MFK2way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address12MFK2way.hbm.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Person12MJoinTab1way.xml"/>-->
+        <!--<mapping resource="com/nalan/framework/hibernate/test/mapping/Address12MJoinTab1way.xml"/>-->
+        <mapping resource="com/nalan/framework/hibernate/test/mapping/Person12MJoinTab2way.xml"/>
+        <mapping resource="com/nalan/framework/hibernate/test/mapping/Address12MJoinTab2way.xml"/>
+
 
         <!-- DB schema will be updated if needed -->
          <!--<property name="hbm2ddl.auto">update</property>-->

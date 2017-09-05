@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+
+    <class name="One2MulJoinTableOneway$Person1ntab" table="PERSON_1ntab">
+        <id name="personid">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="age"/>
+        <!--映射集合属性，join_1ntab是连接表表名-->
+        <set name="addresses"
+             table="join_1ntab"
+        >
+            <!--“column="personid"”确定PERSON_1ntab表关联到连接表的外键列名-->
+            <key column="personid"/>
+            <!--“column="addressid"”关联Person1ntab类的id在连接表中的列名-->
+            <!--“unique="true"表示1-N，Person1ntab是1，Address1ntab是多”-->
+            <many-to-many
+                    column="addressid"
+                    unique="true"
+                    class="One2MulJoinTableOneway$Address1nfk"/>
+        </set>
+    </class>
+</hibernate-mapping> 

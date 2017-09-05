@@ -1,0 +1,4 @@
+DROP TABLE ADDRESS_11tab_sx;
+ drop table if exists ADDRESS_1ntab
+ drop table if exists join_1ntab
+ drop table if exists PERSON_1ntab

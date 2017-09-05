@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.nalan.framework.hibernate.test.mapping">
+
+    <class name="One2MulFKOneway$Person1nfk" table="PERSON_1nfk">
+        <id name="personid">
+            <generator class="identity"/>
+        </id>
+        <property name="name"/>
+        <property name="age"/>
+        <!--映射集合属性，关联到持久化类,inverse="false"(默认)表示主控端在Person1nfk端，lazy="false"表示不采用延迟加载-->
+        <set name="addresses"
+             table="ADDRESS_1nfk"
+             cascade="all"
+        >
+            <!--确定关联的外键列-->
+            <key column="personid"/>
+            <!--用以映射到关联类属性-->
+            <one-to-many class="One2MulFKOneway$Address1nfk"/>
+        </set>
+    </class>
+</hibernate-mapping> 
