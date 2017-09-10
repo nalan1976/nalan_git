@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+<!--配置目标类-->
+    <bean id="helloWorldService"
+          class="hello.HelloWorldService"/>
+    <!--配置切面-->
+    <bean id="aspect" class="aop.HelloWorldAspect"/>
+    <aop:config>
+        <!--表示匹配hello包及子包下的任何方法执行-->
+        <aop:pointcut id="pointcut" expression="execution(* hello..*.*(..))"/>
+        <!--切面使用<aop:config>标签下的<aop:aspect>标签配置，其中“ref”用来引用切面支持类-->
+        <aop:aspect ref="aspect">
+            <!--<aop:before pointcut-ref="pointcut"-->
+            <aop:before pointcut-ref="pointcut"
+                        method="beforeAdvice"/>
+            <aop:after pointcut="execution(* hello..*.*(..))"
+                       method="afterFinallyAdvice"/>
+        </aop:aspect>
+    </aop:config>
+</beans>

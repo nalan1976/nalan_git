@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--以下为HelloApiDecorator的例子配置-->
+    <!-- 定义依赖Bean -->
+    <bean id="helloApi" class="hello.HelloImpl"/>
+    <!-- 通过构造器注入 -->
+    <bean id="helloApi1" class="hello.HelloApiDecorator">
+        <constructor-arg index="0" ref="helloApi"/>
+    </bean>
+    <!-- 通过setter注入 -->
+    <bean id="helloApi2" class="hello.HelloApiDecorator">
+        <property name="helloApi"><ref bean="helloApi"/></property>
+    </bean>
+
+</beans>

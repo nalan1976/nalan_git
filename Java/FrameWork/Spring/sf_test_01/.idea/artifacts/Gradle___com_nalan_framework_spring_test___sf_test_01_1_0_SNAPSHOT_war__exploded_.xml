@@ -18,6 +18,8 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.3.10.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.7.2" />
+          <element id="library" level="project" name="Gradle: net.sourceforge.cglib:com.springsource.net.sf.cglib:2.2.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.10.RELEASE" />
