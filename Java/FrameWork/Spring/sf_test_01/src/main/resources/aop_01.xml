@@ -5,18 +5,25 @@
        xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="
 http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
 http://www.springframework.org/schema/aop
-http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
-<!--配置目标类-->
+    <!--允许CGlib创建代理-->
+    <!--<aop:aspectj-autoproxy proxy-target-class="true"/>-->
+    <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+    <!--配置目标类-->
     <bean id="helloWorldService"
           class="hello.HelloWorldService"/>
+    <bean id="beforeAdvice" class="aop.BeforeAdviceImpl"/>
     <!--配置切面-->
     <bean id="aspect" class="aop.HelloWorldAspect"/>
     <aop:config>
         <!--表示匹配hello包及子包下的任何方法执行-->
         <aop:pointcut id="pointcut" expression="execution(* hello..*.*(..))"/>
+        <!--advisor必须放在pointcut后面，奇怪的是这里的点就没有事！！！-->
+        <aop:advisor pointcut="execution(* hello..*.sayAdvisorBefore(..))"
+                     advice-ref="beforeAdvice"/>
         <!--切面使用<aop:config>标签下的<aop:aspect>标签配置，其中“ref”用来引用切面支持类-->
         <aop:aspect ref="aspect">
             <!--<aop:before pointcut-ref="pointcut"-->
@@ -24,6 +31,14 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
                         method="beforeAdvice"/>
             <aop:after pointcut="execution(* hello..*.*(..))"
                        method="afterFinallyAdvice"/>
+            <aop:after-returning pointcut="execution(* hello..*.*(..))"
+                       method="afterReturnAdvice" />
+            <!--引入接口，原文多了一个点，弄了好长时间！！！-->
+            <!--types-matching="hello..*.IHelloWorldService+"-->
+            <aop:declare-parents
+                    types-matching="hello..*IHelloWorldService+"
+                    implement-interface="hello.IIntroductionService"
+                    default-impl="hello.IntroductiondService"/>
         </aop:aspect>
     </aop:config>
 </beans>

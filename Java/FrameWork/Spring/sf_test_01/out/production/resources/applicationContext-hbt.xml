@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close"
+          p:driverClassName="${jdbc.driverClassName}"
+          p:url="${jdbc.url}"
+          p:username="${jdbc.username}"
+          p:password="${jdbc.password}"/>
+
+<!--    <bean id="lobHandler"
+          class="org.springframework.jdbc.support.lob.DefaultLobHandler"
+          lazy-init="true"/>-->
+
+    <context:annotation-config />
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <!-- 指明事务使用在哪个数据源，class也有该属性的声明
+            此处可以配置sessionFactory属性，因为它的对象已经配置注入了dataSource
+         -->
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="get*" read-only="false" propagation="NOT_SUPPORTED"/>
+            <tx:method name="find*" read-only="false" propagation="NOT_SUPPORTED"/>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/> <!-- 如果不把save update delete都配置上，这些操作会无效-->
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="test*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <!-- 直接使用hibernate配置 -->
+    <!--
+     <bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+		p:configLocation="classpath:hibernate.cfg.xml"/>
+    -->
+
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+          p:dataSource-ref="dataSource"
+          p:mappingLocations="classpath*:*.hbm.xml">
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">
+                    org.hibernate.dialect.MySQL5Dialect
+                </prop>
+                <prop key="hibernate.show_sql">
+                    true
+                </prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+                <!--<prop key="hibernate.current_session_context_class">-->
+                    <!--org.springframework.orm.hibernate5.SpringSessionContext-->
+                <!--</prop>-->
+                </props>
+        </property>
+    </bean>
+    <!-- 配置事务切入点 -->
+    <aop:config>
+        <aop:pointcut expression="execution(* hibernate.*.*(..))" id="pointCut"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointCut"/>
+    </aop:config>
+    <!--配置HibernateTemplate-->
+    <bean id="hibernateTemplate"
+          class="org.springframework.orm.hibernate5.HibernateTemplate"
+          p:sessionFactory-ref="sessionFactory"/>
+
+
+</beans>
