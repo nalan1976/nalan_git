@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public class PersonRepositoryImpl implements PersonRepository {
 
-    //注入的sessionFactory是从哪里来的？
+    //注入的sessionFactory是从哪里来的？根据类型自动注入session工厂
     @Autowired
     private SessionFactory sessionFactory;
 
