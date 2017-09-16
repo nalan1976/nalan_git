@@ -28,6 +28,7 @@
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Gradle: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.43" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.3.10.RELEASE" />
@@ -44,7 +45,6 @@
           <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Gradle: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.43/mysql-connector-java-5.1.43.jar" />
         </element>
       </element>
     </root>
