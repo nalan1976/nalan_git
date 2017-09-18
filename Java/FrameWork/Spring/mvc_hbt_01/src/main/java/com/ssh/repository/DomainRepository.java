@@ -20,4 +20,5 @@ public interface DomainRepository<T,PK extends Serializable>{
     void delete(PK id);
 
     void flush();
+    void findByProperty(Class entityClass, String propertyName,Object value);
 }

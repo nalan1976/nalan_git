@@ -20,7 +20,10 @@ public class MainController {
     @RequestMapping(value = "savePerson", method = RequestMethod.GET)
     @ResponseBody
     public String savePerson(){
+
         personService.savePerson();
+        personService.findByProperty();
+
         return "success!";
     }
 }

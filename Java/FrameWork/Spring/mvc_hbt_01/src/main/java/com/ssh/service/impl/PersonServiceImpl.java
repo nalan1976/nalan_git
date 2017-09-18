@@ -21,4 +21,9 @@ public class PersonServiceImpl implements PersonService {
         person.setRemark("this is XRog");
         return personRepository.save(person);
     }
+    public void findByProperty(){
+        Person person = new Person();
+        person.setUsername("XRog");
+        personRepository.findByProperty(person.getClass(), "username", person.getUsername());
+    }
 }

@@ -4,6 +4,7 @@ import com.ssh.repository.PersonRepository;
 import com.ssh.entity.Person;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -18,7 +19,11 @@ public class PersonRepositoryImpl implements PersonRepository {
     private SessionFactory sessionFactory;
 
     private Session getCurrentSession() {
-        return this.sessionFactory.openSession();
+        Session s = this.sessionFactory.openSession();
+        System.out.println(s.hashCode());
+        System.out.println(sessionFactory);
+        return s;
+//        return this.sessionFactory.openSession();
     }
 
     public Person load(Long id) {
@@ -52,5 +57,12 @@ public class PersonRepositoryImpl implements PersonRepository {
 
     public void flush() {
         getCurrentSession().flush();
+    }
+
+    public void findByProperty(Class entityClass, String propertyName,Object value) {
+        String queryString = "from "+entityClass.getName()+ " as model where model." + propertyName + " = '"+ value+"'";
+        Query qr = getCurrentSession().createQuery(queryString);
+        qr.list();
+//        return null;
     }
 }

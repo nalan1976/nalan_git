@@ -4,13 +4,26 @@
 3）有时结束时会报：16-Sep-2017 15:41:03.694 信息 [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
 
 疑惑的问题：
+1）使用getCurrentSession怎样都不行，而使用openSession就可以：
+    a）但openSession每次返回的都是不同的Session，会否引起资源泄露等问题？
 
 
 解决的问题：
-1）@GeneratedValue(strategy = GenerationType.AUTO)：即为默认值时，mysql数据库会生成主键表，
+1）@GeneratedValue(strategy = GenerationType.AUTO)：即为默认值时，mysql数据库会生成主键表（"hibernate_sequence"?），
 造成数据插入失败，改为IDENTITY即可
 2）目前的配置在数据库日志上看，发送了非常多的语句，会否对数据库造成压力？
   实验：没有断开连接的话，每次插入就一句，断开了连接就会插入很多，
   通过ApplicationContext中maxIdleTime参数控制，修改完成后重新打war包即可
 3）AutoWired注入还不太理解，到底注入的是什么？
   答：注入的是根据类型自动匹配的对象实例
+
+得到验证的问题：
+1）不同的DAO使用：
+        @Autowired
+        private SessionFactory sessionFactory;
+        注入的都是同一个SessionFactory
+2）web.xml中<url-pattern>/</url-pattern>的值是否为"*.do"与@RequestMapping("/views/login.do")的写法没有关系；
+
+
+功能：
+1）注册终于正常了
