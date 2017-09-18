@@ -54,5 +54,7 @@
     <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
         <property name="sessionFactory" ref="sessionFactory" />
     </bean>
-    <tx:annotation-driven/><!--只有事务管理器id为transactionManager才能这么写-->
+    <!--只有事务管理器id为transactionManager才能这么写-->
+    <!--这句不写会要人命，getCurrentSession无论如何都不正常-->
+    <tx:annotation-driven/>
 </beans>

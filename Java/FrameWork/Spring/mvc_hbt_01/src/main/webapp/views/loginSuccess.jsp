@@ -11,5 +11,5 @@
     <title>Success</title>
 </head>
 <body>
-<h2 style="color: #1c2aff;">Login Success!</h2></body>
+<h2 style="color: #1c2aff;">注册成功!</h2></body>
 </html>
