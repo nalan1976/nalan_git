@@ -2,12 +2,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.1.xsd
         http://www.springframework.org/schema/mvc
-        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+        http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!--********************************************配置Spring***************************************-->
     <!-- 自动扫描 -->
@@ -15,6 +16,9 @@
         <!-- 扫描时跳过 @Controller 注解的JAVA类（控制器） -->
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
+    <!-- 打开Spring注解依赖注入功能，可以不要？？？ -->
+    <!--当使用<context:component-scan/>后，即可将<context:annotation-config/>省去-->
+    <!--<context:annotation-config/>-->
 
 
     <!--********************************************配置hibernate********************************************-->
@@ -57,4 +61,8 @@
     <!--只有事务管理器id为transactionManager才能这么写-->
     <!--这句不写会要人命，getCurrentSession无论如何都不正常-->
     <tx:annotation-driven/>
+    <!-- 打开AOP拦截功能，出错可能是因为没有把依赖库编进来-->
+    <!--<aop:aspectj-autoproxy/>-->
+
+
 </beans>

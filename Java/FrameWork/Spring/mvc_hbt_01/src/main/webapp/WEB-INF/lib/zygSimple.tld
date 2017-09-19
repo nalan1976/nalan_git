@@ -1,0 +1,19 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+
+    <description>A tag library exercising SimpleTag handlers.</description>
+    <tlib-version>2.0</tlib-version>
+    <short-name>zyg2</short-name>
+    <uri>h/simpleTag</uri><!-- 标签绑定的uri，用于引入 -->
+
+
+    <tag>
+        <name>heddin</name><!-- 标签名 -->
+        <tag-class>com.ssh.web.taglib.HeddinSimpleTag</tag-class>
+        <body-content>scriptless</body-content><!-- 有无标签体(单标签还是成对标签) -->
+    </tag>
+
+</taglib>

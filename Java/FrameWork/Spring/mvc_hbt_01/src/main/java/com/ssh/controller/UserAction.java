@@ -61,7 +61,7 @@ public class UserAction {
     public String register() {
         boolean b = userService.register(username, password);
 //        System.out.println("register() b is :" + b);
-        lg.error("register() b is :" + b);
+        lg.trace("register() b is :" + b);
 
         if (b)
             return "loginSuccess";
