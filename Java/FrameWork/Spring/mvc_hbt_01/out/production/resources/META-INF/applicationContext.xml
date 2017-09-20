@@ -61,8 +61,8 @@
     <!--只有事务管理器id为transactionManager才能这么写-->
     <!--这句不写会要人命，getCurrentSession无论如何都不正常-->
     <tx:annotation-driven/>
-    <!-- 打开AOP拦截功能，出错可能是因为没有把依赖库编进来-->
-    <!--<aop:aspectj-autoproxy/>-->
+    <!-- 打开AOP拦截功能，可能会出错；原因可能是因为没有把依赖库编进来-->
+    <aop:aspectj-autoproxy/>
 
 
 </beans>

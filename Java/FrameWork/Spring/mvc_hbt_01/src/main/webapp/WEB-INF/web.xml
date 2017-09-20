@@ -70,12 +70,33 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <!-- 利用spring解决hibernate延迟加载问题，注释掉会怎样？ -->
+    <filter>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>
+    </filter>
+    <filter-mapping>
+    <filter-name>openSessionInViewFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!--解决hibernate延迟加载问题end-->
+
     <!--  字符集过滤 end -->
+
+    <!--添加自定义标签支持-->
     <jsp-config>
-    <taglib>
-        <taglib-uri>h/simpleTag</taglib-uri>
-        <taglib-location>/WEB-INF/lib/zygSimple.tld</taglib-location>
-    </taglib>
+        <taglib>
+            <taglib-uri>h/simpleTag</taglib-uri>
+            <taglib-location>/WEB-INF/lib/zygSimple.tld</taglib-location>
+        </taglib>
+
+        <taglib>
+            <taglib-uri>http://zhangjihao.com/page</taglib-uri>
+            <taglib-location>/WEB-INF/lib/paging.tld</taglib-location>
+        </taglib>
+        <!--自定义标签支持end-->
+
     </jsp-config>
 
 </web-app>
