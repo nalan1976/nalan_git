@@ -39,7 +39,7 @@
     </tr>
     <tr>
         <td>session:${requestScope.users[0].id}</td>
-        <td>session:${users[1].id}</td>
+        <%--<td>session:${users[1].id}</td>--%>
     </tr>
 </TABLE>
 <!-- 注意了，两个字母实现通用分页 -->

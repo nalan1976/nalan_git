@@ -45,6 +45,13 @@
         <servlet-name>spring</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    <!--springMVC监听器，为解决获取不到request添加-->
+    <!-- 使用request，session和globalSession这3种作用域，必须配置 -->
+    <listener>
+        <listener-class>
+            org.springframework.web.context.request.RequestContextListener
+        </listener-class>
+    </listener>
     <!-- spring MVC config end-->
 
 
