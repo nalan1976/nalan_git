@@ -44,7 +44,9 @@ public class UserPagingAction {
         request.setAttribute("users", list);//nalan books要改掉
         //出来后的page对象已经有了总记录数了，自然就有了页码信息
         request.setAttribute("page", page);
-        return new ModelAndView("forward:user.jsp", "users", list);
+        return new ModelAndView("user", "users", list);
+//        下面这种写法也可
+//        return new ModelAndView("forward:user.jsp", "users", list);
     }
 /**
  * 访问地址：localhost:8080/views/jsp/user.jsp
