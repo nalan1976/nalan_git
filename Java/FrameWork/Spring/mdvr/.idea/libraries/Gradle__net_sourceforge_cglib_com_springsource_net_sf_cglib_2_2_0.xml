@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.sourceforge.cglib:com.springsource.net.sf.cglib:2.2.0">
+    <CLASSES>
+      <root url="jar://E:/Develop/Gradle/.gradle/caches/modules-2/files-2.1/net.sourceforge.cglib/com.springsource.net.sf.cglib/2.2.0/731d1af370f6298c1e490b2cbe8922d1c2d82375/com.springsource.net.sf.cglib-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Develop/Gradle/.gradle/caches/modules-2/files-2.1/net.sourceforge.cglib/com.springsource.net.sf.cglib/2.2.0/eadfb3db6dbb19c59d6836c5d3aa2a1c3670726d/com.springsource.net.sf.cglib-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

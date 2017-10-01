@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mdvr.iml" filepath="$PROJECT_DIR$/.idea/modules/mdvr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mdvr_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mdvr_main.iml" group="mdvr" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mdvr_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mdvr_test.iml" group="mdvr" />
+    </modules>
+  </component>
+</project>
