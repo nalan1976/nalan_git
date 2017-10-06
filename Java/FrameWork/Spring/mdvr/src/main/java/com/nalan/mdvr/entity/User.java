@@ -1,5 +1,5 @@
 /***********************************************************************
- * Module:  User.java
+ * Module:  UserDao.java
  * Author:  Administrator
  * Purpose: Defines the Class User
  ***********************************************************************/
@@ -13,9 +13,9 @@ import java.util.*;
  *   0：普通用户
  *   1：超级用户admin
  * @pdOid b61eb705-e3fe-4307-8431-1a2bf357c6b7 */
-@Data
-@Entity
+//@Data
 @Table(name = "t_user")
+@Entity
 public class User extends BaseEntity {
    /** @pdOid 1ccf11d1-8064-4509-9f42-64cfd1b3df75 */
    @Id
@@ -46,4 +46,68 @@ public class User extends BaseEntity {
    @ManyToMany(mappedBy = "equipments", cascade = CascadeType.ALL)
    private Set <EquipGroup> equipGroups = new HashSet<>();
 
+   public void setUserId(Integer userId) {
+      this.userId = userId;
+   }
+
+   public void setUserName(String userName) {
+      this.userName = userName;
+   }
+
+   public void setUserType(Integer userType) {
+      this.userType = userType;
+   }
+
+   public void setPassword(String password) {
+      this.password = password;
+   }
+
+   public void setCreateDatetime(Date createDatetime) {
+      this.createDatetime = createDatetime;
+   }
+
+   public void setUserGroups(Set<UserGroup> userGroups) {
+      this.userGroups = userGroups;
+   }
+
+   public void setUserAuthoritys(Set<Authority> userAuthoritys) {
+      this.userAuthoritys = userAuthoritys;
+   }
+
+   public void setEquipGroups(Set<EquipGroup> equipGroups) {
+      this.equipGroups = equipGroups;
+   }
+
+   public Integer getUserId() {
+
+      return userId;
+   }
+
+   public String getUserName() {
+      return userName;
+   }
+
+   public Integer getUserType() {
+      return userType;
+   }
+
+   public String getPassword() {
+      return password;
+   }
+
+   public Date getCreateDatetime() {
+      return createDatetime;
+   }
+
+   public Set<UserGroup> getUserGroups() {
+      return userGroups;
+   }
+
+   public Set<Authority> getUserAuthoritys() {
+      return userAuthoritys;
+   }
+
+   public Set<EquipGroup> getEquipGroups() {
+      return equipGroups;
+   }
 }

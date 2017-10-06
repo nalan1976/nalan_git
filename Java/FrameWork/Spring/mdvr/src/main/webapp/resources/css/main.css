@@ -1,0 +1,156 @@
+/*为了使菜单居中*/
+body {
+    padding-top: 2px;
+    text-align: center;
+}
+.label_login{
+    font-size:38px;
+}
+
+/*nalan_*:css:menu:demo:*; -------------菜单css代码----------begin---------- */
+.menuDiv {
+    border: 2px solid #aac;
+    overflow: hidden; /*这个属性定义溢出元素内容区的内容会如何处理:hidden:内容会被修剪，并且其余内容是不可见的。*/
+    display: inline-block;
+}
+
+/* 去掉a标签的下划线 */
+.menuDiv a {
+    text-decoration: none;
+}
+
+/* 设置ul和li的样式 */
+.menuDiv ul, .menuDiv li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+/* 设置二级菜单绝对定位，并隐藏 */
+.menuDiv > ul > li > ul {
+    position: absolute;
+    display: none;
+}
+
+/* 设置二级菜单的li的样式 */
+.menuDiv > ul > li > ul > li {
+    float: none;
+}
+
+/* 鼠标放在一级菜单上，显示二级菜单 */
+.menuDiv > ul > li:hover ul {
+    display: block;
+}
+
+/* 一级菜单 */
+.menuDiv > ul > li > a {
+    font-family: "微软雅黑";
+    /*font-weight:bold;*/
+    font-size: 14px;
+    width: 120px;
+    line-height: 28px;
+    color: black;
+    background-color: #00A2CA;
+    text-align: center;
+    border-left: 1px solid #bbf;
+    display: block;
+}
+
+/* 在一级菜单中，第一个不设置左边框 */
+.menuDiv > ul > li:first-child > a {
+    border-left: none;
+}
+
+/* 在一级菜单中，鼠标放上去的样式 */
+.menuDiv > ul > li > a:hover {
+    color: #FFF;
+    background-color: #0095BB;
+}
+
+/* 二级菜单 */
+.menuDiv > ul > li > ul > li > a {
+    font-family: "微软雅黑";
+    /*font-weight:bold;*/
+    font-size: 12px;
+    width: 120px;
+    line-height: 26px;
+    color: #456;
+    background-color: #eff;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: block;
+}
+
+/* 在二级菜单中，第一个设置顶边框 */
+.menuDiv > ul > li > ul > li:first-child > a {
+    border-top: 1px solid #ccc;
+}
+
+/* 在二级菜单中，鼠标放上去的样式 */
+.menuDiv > ul > li > ul > li > a:hover {
+    color: #a4f;
+    background-color: #cdf;
+}
+
+/* -------------菜单css代码----------end---------- */
+div#div_container {
+    width: 100%;
+    height: 800px;
+    background-color: #ff3a46;
+}
+
+div#div_menu_header {
+    width: 100%;
+    /*top:30px;*/
+    height: 32px;
+    background-color: #ffffff;
+    /*border:1px ;*/
+}
+
+div#div_main {
+    float: left;
+    /*top:50px;*/
+    margin: 0;
+    padding: 0px 0 0 0;
+    border: 1;
+    width: 100%;
+    height: 600px;
+    background-color: #e3e9fe /*颜色配的真丑*/
+}
+
+div#div_footer {
+    float: left;
+    /*top:50px;*/
+    margin: 0;
+    padding: 0px 0 0 0;
+    border: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #eafee6 /*颜色配的真丑*/
+}
+
+div#div_user_group {
+    float: left;
+    /*top:50px;*/
+    margin: 0;
+    padding: 0px 0 0 0;
+    border: 2;
+    width: 50%;
+    height: 596px;
+    background-color: #dbd8da;
+    /*margin: 2px;*/
+}
+
+div#div_user {
+    float: left;
+    /*top:50px;*/
+    margin: 0;
+    padding: 0px 0 0 0;
+    border: 2;
+    width: 50%;
+    height: 596px;
+    background-color: #c3e8f6;
+    /*margin: 2px;*/
+}

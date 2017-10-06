@@ -6,6 +6,8 @@
 package com.nalan.mdvr.entity;
 import java.util.*;
 import org.apache.commons.lang.builder.ToStringBuilder;
+
+import javax.persistence.Entity;
 import java.io.Serializable;
 
 /** 所有POJO类的基类，只实现toString()方法
