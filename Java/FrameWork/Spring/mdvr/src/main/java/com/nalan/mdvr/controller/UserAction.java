@@ -25,7 +25,7 @@ public class UserAction {
     public String login(@RequestParam(value="username", required = true) String username,//nalan?   required=true没起作用？
                         @RequestParam(value="password", required = true) String password) {
         if (userService.checkUser(username, password)) {
-            return "success";
+            return "setup/userGroup";
         }
         return "error";
     }

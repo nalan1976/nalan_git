@@ -2,6 +2,7 @@ package com.nalan.mdvr.repository;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
 
 public interface IBaseDao<T, ID extends Serializable> {
     void save(T t);
@@ -18,6 +19,8 @@ public interface IBaseDao<T, ID extends Serializable> {
     void queryHql(String hqlString, Object...values);
 
     T getBySql(String sqlString, Object... values);
+    List<T> findAllByHql(T entityClass);
+    void flush();
 
 //    /**
 //     * <保存实体>

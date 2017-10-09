@@ -10,6 +10,7 @@ import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.Collection;
+import java.util.List;
 
 import org.hibernate.SessionFactory;
 
@@ -60,11 +61,11 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
     }
     @Override
     public  T load(ID id){
-       return sf.getCurrentSession().load(entityClass, id);
+       return sf.getCurrentSession().load(getEntityClass(), id);
     }
     @Override
     public T get(ID id){
-        return sf.getCurrentSession().get(entityClass, id);
+        return sf.getCurrentSession().get(getEntityClass(), id);
     }
     @Override
     public boolean contains(T t){
@@ -116,5 +117,21 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
             }
         }
         return (T)q.uniqueResult();
+    }
+    /**传入查询实体类型
+     * */
+    @Override
+    public List<T> findAllByHql(T entityClass) {
+//        sf.getCurrentSession().flush();
+        String queryString = "from " + entityClass.getClass().getSimpleName();
+        Query qr = sf.getCurrentSession().createQuery(queryString);
+        List<T> list = qr.list();
+        if(list.size() != 0)
+            return list;
+        return null;
+    }
+    @Override
+    public void flush(){
+        sf.getCurrentSession().flush();
     }
 }

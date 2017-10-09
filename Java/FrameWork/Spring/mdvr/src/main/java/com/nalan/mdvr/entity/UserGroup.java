@@ -19,7 +19,7 @@ import java.util.Set;
 /**
  * @pdOid 50479195-415e-4ebc-9bac-e7114b709579
  */
-@Data
+//@Data
 @Entity
 @Table(name = "t_user_group")
 public class UserGroup extends BaseEntity {
@@ -29,10 +29,45 @@ public class UserGroup extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userGroupId;
+
+    public void setUserGroupId(Integer userGroupId) {
+        this.userGroupId = userGroupId;
+    }
+
+    public void setUserGroupName(String userGroupName) {
+        this.userGroupName = userGroupName;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
+    }
+
+    public void setUserGroupAuthoritys(Set<Authority> userGroupAuthoritys) {
+        this.userGroupAuthoritys = userGroupAuthoritys;
+    }
+
+    public Integer getUserGroupId() {
+
+        return userGroupId;
+    }
+
+    public String getUserGroupName() {
+        return userGroupName;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public Set<Authority> getUserGroupAuthoritys() {
+        return userGroupAuthoritys;
+    }
+
     /**
      * @pdOid 713f8de7-2ba7-49db-ab59-b94b3d02a4b7
      */
-    private Integer userGroupName;
+
+    private String userGroupName;
     /**
      * @pdOid 75fbebaa-dc9a-4812-938f-01f2f2878dc2
      */
