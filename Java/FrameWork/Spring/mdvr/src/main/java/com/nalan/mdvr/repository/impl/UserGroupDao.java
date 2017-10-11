@@ -1,7 +1,6 @@
 package com.nalan.mdvr.repository.impl;
 
 import com.nalan.mdvr.entity.UserGroup;
-import com.nalan.mdvr.repository.IUserDao;
 import com.nalan.mdvr.repository.IUserGroupDao;
 import lombok.Data;
 import org.springframework.stereotype.Repository;
@@ -11,7 +10,9 @@ import java.util.List;
 
 @Data
 @Repository
-public class UserGroupDao<T, ID extends Serializable> extends BaseDao<T, ID> implements IUserGroupDao<T, ID> {
+//下面这个声明是这个类90%存在的意义！！！
+public class UserGroupDao extends BaseDao<UserGroup, Serializable> implements IUserGroupDao<UserGroup, Serializable> {//nalan_*:EntityDao::*;
+
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
     }
@@ -28,13 +29,14 @@ public class UserGroupDao<T, ID extends Serializable> extends BaseDao<T, ID> imp
     private UserGroup userGroup;
 
     @Override
-    public UserGroup addUserGroup(String userGroupName){
+    public UserGroup addUserGroup(String userGroupName) {
 //        UserGroup userGroup = new UserGroup();
         userGroup.setUserGroupName(userGroupName);
-        this.save((T)userGroup);
+        this.save(userGroup);
         return userGroup;
     }
-    public List<UserGroup> findAllByHql(){
-        return (List<UserGroup>)findAllByHql((T)userGroup);
+
+    public List<UserGroup> findAllByHql() {
+        return (List<UserGroup>) findAllByHql(userGroup);
     }
 }

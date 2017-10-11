@@ -5,7 +5,7 @@ import com.nalan.mdvr.entity.UserGroup;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
+//用于转化输出到前台userGroup表中的数据到json对象
 public class StructUserGroup implements Serializable{
     private static final long serialVersionUID = -5714539466835003200L;
 

@@ -126,6 +126,7 @@
                 <input class="input_button_normal" id="btn_add" type="button" value="增加"/> <!--onclick="addUserGroup('table_user_group')"-->
                 <input class="input_button_normal" id="btn_delete" type="button" value="删除"/>
                 <input class="input_button_normal" id="btn_change" type="button" value="修改"/>
+                <input class="input_button_normal" name="userGroupName" type="submit" value="TEST"/>
             </div>
         </div>
         <div id="div_user"><!--右边主体区域-->

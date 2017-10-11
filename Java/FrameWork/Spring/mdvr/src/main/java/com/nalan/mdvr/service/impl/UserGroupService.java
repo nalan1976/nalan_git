@@ -1,5 +1,6 @@
 package com.nalan.mdvr.service.impl;
 
+import com.nalan.mdvr.bean.PassInStruct;
 import com.nalan.mdvr.bean.StructUserGroup;
 import com.nalan.mdvr.entity.UserGroup;
 import com.nalan.mdvr.repository.IUserGroupDao;
@@ -10,33 +11,70 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Iterator;
 import java.util.List;
 
 @Data
 @Service
 @Scope("prototype")
 @Transactional
-public class UserGroupService implements IUserGroupService{
+public class UserGroupService implements IUserGroupService {
     @Autowired
     private IUserGroupDao userGroupDao;
-//    private StructUserGroup structUserGroup = new StructUserGroup();
 
-    public StructUserGroup addUserGroup(String userGroupName){
+    public StructUserGroup addUserGroup(String userGroupName) {
         StructUserGroup structUserGroup = new StructUserGroup();
+        //添加用户组成功后返回必要的信息填充结构
         structUserGroup.userGroup = userGroupDao.addUserGroup(userGroupName);
 
-        if(structUserGroup.userGroup != null) {
+        if (structUserGroup.userGroup != null) {
             userGroupDao.flush();
-            List<UserGroup> ls = userGroupDao.findAllByHql();
+            return getAll();
+/*            List<UserGroup> ls = userGroupDao.findAllByHql();
             //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
-//            for(UserGroup ug : ls)
-//                structUserGroup.setInfo(ug.getUserGroupId(), ug.getUserGroupName());
 
-            for(int i = 0; i < ls.size(); i++){//nalan_*:list:iterate:*;    上面的遍历方法也可以
+
+            for (int i = 0; i < ls.size(); i++) {//nalan_*:list:iterate:*;
                 structUserGroup.setInfo(ls.get(i).getUserGroupId(), ls.get(i).getUserGroupName());
             }
-            return structUserGroup;
+            return structUserGroup;*/
         }
         return null;
+    }
+
+    public StructUserGroup delUserGroup(List<PassInStruct> ugIdList) {
+        Iterator<PassInStruct> it = ugIdList.iterator();
+        while (it.hasNext()) {
+            //测试是前台传过来的是字符串，要转数字
+            userGroupDao.deleteById(Integer.parseInt(it.next().getUserGroupId()));//nalan_*:java:convert:*;
+            //这里没有对输入是有有效、删除失败、找不到对应数据做出处理，真正做项目时，还应封装返回状态信息告知前台错误的类型及其它细节
+        }
+        //返回所有表中数据
+        userGroupDao.flush();//使删除的数据入库并同步一级缓存
+        return getAll();
+    }
+
+    //重载了带传入值的getAll
+    private StructUserGroup getAll(StructUserGroup structUserGroup) {
+//        StructUserGroup structUserGroup = new StructUserGroup();
+        List<UserGroup> ls = userGroupDao.findAllByHql();
+        //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
+        if(ls != null)
+            for (UserGroup ug : ls)
+                structUserGroup.setInfo(ug.getUserGroupId(), ug.getUserGroupName());
+
+        return structUserGroup;
+
+    }
+    private StructUserGroup getAll() {
+        StructUserGroup structUserGroup = new StructUserGroup();
+        List<UserGroup> ls = userGroupDao.findAllByHql();
+        //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
+        if(ls != null)
+            for (UserGroup ug : ls)
+                structUserGroup.setInfo(ug.getUserGroupId(), ug.getUserGroupName());
+
+        return structUserGroup;
+
     }
 }

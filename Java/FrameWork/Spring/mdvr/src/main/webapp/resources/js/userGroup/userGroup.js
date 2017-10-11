@@ -66,7 +66,7 @@ function add_row(obj) {
 }
 $(document).ready(function () {
     $("#btn_add").click(function () {//nalan_*:jQuery:table:*;
-        $("#table_user_group tr:last").after('<tr><p>' + '<td><input class="checkbox_normal" type="checkbox" onclick="del_row(this)"/>测试test</td>'+
+        $("#table_user_group tr:last").after('<tr><p>' + '<td id="td_1"><input class="checkbox_normal" type="checkbox" onclick="del_row(this)"/>测试test</td>'+
             '<td id="td_2">test1</td>'+
             '<td id="td_3">test1</td>'+
             '<td id="td_4">test1</td>'+
@@ -90,7 +90,57 @@ $(document).ready(function () {
 //            });
 
     $("#btn_delete").click(function () {
-        $(".checkbox_normal:checked").parent().parent().remove();
+        //var obj = $(".checkbox_normal:checked").parent();
+        // alert(obj.first().text());
+
+        // var aReal = [{}];//正确的写法1
+        var aReal = [[]];//正确的写法2
+        $.each($(".checkbox_normal:checked").parent(), function (i, dom) {//nalan_*:jQuery:each:*;
+            //参数若只传一个值，则表示循环次数，第二个才是Dom对象（注意不是jQuery对象，它要用$(this)来表示）
+            var aInner;
+            // if(i == 0) {
+            //     aInner = {"type" : "UG_DEL_UG"};
+            //     aReal[i] = aInner;
+            // }
+            aInner = {"userGroupId" : dom.innerText};//nalan_*:array:*;
+            // aReal[i+1] = aInner;
+            aReal[i] = aInner;
+            // alert(Number(dom.innerText) + 1);
+        })
+
+        $.ajax({type:'post',  url : '/jsp/setup/addUserGroup2',//@RequestBody绝对不能用get
+            contentType : 'application/json;charset=utf-8',
+            data : JSON.stringify(aReal),   //将对象变成字符串
+ /*       var params = JSON.stringify([{
+            username : "zhangSan",
+            passwd : "123456"
+        },{
+            username : "LiSi",
+            passwd : "8888"
+        }]);
+        $.ajax({
+            type : 'POST',
+            url : '/jsp/setup/addUserGroup2',
+            data : params,
+            dataType : "json",
+            cache : false,
+            contentType : "application/json",*/
+            success:function (data) {
+                // alert(data.userGroupName);
+                STATE_SUBMITING = false;
+                if(data == "")//后台返回对象为null时，转为json后传到前台为空
+                    alert("数据保存失败！success");
+                else{
+                    refillTable(data);
+                }
+            },
+            error:function (data) {
+                STATE_SUBMITING=false;
+                alert("数据保存失败！error");
+            }
+        });
+        STATE_SUBMITING = true;
+        // $(".checkbox_normal:checked").parent().parent().remove();
     });
     /*          以下是页面使用jQuery的实例代码，不要删除
                 $("#btn_delete").click(function () {
