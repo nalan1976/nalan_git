@@ -2,6 +2,7 @@ package com.nalan.mdvr.controller;
 
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nalan.mdvr.bean.PassInChange;
 import com.nalan.mdvr.bean.PassInStruct;
 import com.nalan.mdvr.bean.Person;
 import com.nalan.mdvr.bean.StructUserGroup;
@@ -22,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 //@Data
 @Controller
@@ -66,5 +68,22 @@ public class UserGroupAction {
         //删除list中主键所表示的数据，并返回userGroup表中剩余数据
         return userGroupService.delUserGroup(list);
 //        return null;
+    }
+
+    @RequestMapping("changeUserGroup")
+    public @ResponseBody
+    StructUserGroup changeUserGroup(@RequestBody String ugInfo) {
+        //将获得的json字符串转化为对象list
+        ObjectMapper objectMapper = new ObjectMapper();
+        JavaType javaType = objectMapper.getTypeFactory().constructParametricType(List.class, PassInChange.class);
+        List<PassInChange> list = null;
+        try{list = objectMapper.readValue(ugInfo, javaType);}
+        catch (IOException e){}
+
+        //实在是挺费劲的，先不折腾了！实现的极为别扭
+        if(list.size() != 0)
+            return userGroupService.chgUserGroup(list.get(0).getUserGroupId(), list.get(1).getNewName());
+        else
+            return null;
     }
 }

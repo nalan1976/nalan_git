@@ -125,10 +125,13 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
 //        sf.getCurrentSession().flush();
         String queryString = "from " + entityClass.getClass().getSimpleName();
         Query qr = sf.getCurrentSession().createQuery(queryString);
-        List<T> list = qr.list();
-        if(list.size() != 0)
-            return list;
-        return null;
+        return qr.list();
+/*        List<T> list = qr.list();
+        return list;*/
+
+//        if(list.size() != 0)
+//            return list;
+//        return null;
     }
     @Override
     public void flush(){

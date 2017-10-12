@@ -29,7 +29,7 @@ public class UserGroupService implements IUserGroupService {
 
         if (structUserGroup.userGroup != null) {
             userGroupDao.flush();
-            return getAll();
+            return getAll(structUserGroup);
 /*            List<UserGroup> ls = userGroupDao.findAllByHql();
             //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
 
@@ -59,7 +59,7 @@ public class UserGroupService implements IUserGroupService {
 //        StructUserGroup structUserGroup = new StructUserGroup();
         List<UserGroup> ls = userGroupDao.findAllByHql();
         //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
-        if(ls != null)
+        if(ls.size() != 0)
             for (UserGroup ug : ls)
                 structUserGroup.setInfo(ug.getUserGroupId(), ug.getUserGroupName());
 
@@ -70,11 +70,26 @@ public class UserGroupService implements IUserGroupService {
         StructUserGroup structUserGroup = new StructUserGroup();
         List<UserGroup> ls = userGroupDao.findAllByHql();
         //装填数据准备返回状态及完整数据：应包含添加的对象完整信息+返回列表有效信息
-        if(ls != null)
+//        if(ls != null)
+        if(ls.size() != 0)
             for (UserGroup ug : ls)
                 structUserGroup.setInfo(ug.getUserGroupId(), ug.getUserGroupName());
 
         return structUserGroup;
 
+    }
+    public StructUserGroup chgUserGroup(int userGroupId, String newName){
+        StructUserGroup structUserGroup = new StructUserGroup();
+        //先根据id返回对象更改数据，再重新查询并返回所有结果
+        structUserGroup.userGroup = (UserGroup) userGroupDao.get(userGroupId);//get 不到会返回什么？null?
+        if(structUserGroup.getUserGroup() != null){
+            structUserGroup.getUserGroup().setUserGroupId(userGroupId);
+            structUserGroup.getUserGroup().setUserGroupName(newName);
+            userGroupDao.update(structUserGroup.getUserGroup());//session相关函数没有返回值，晕！
+        }
+        //是否需要flush？
+        userGroupDao.flush();
+        return getAll(structUserGroup);
+//        return null;
     }
 }
