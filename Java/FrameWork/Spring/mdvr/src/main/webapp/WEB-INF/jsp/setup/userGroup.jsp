@@ -137,11 +137,13 @@
                 <form id="form_user" action="" method="post">
                     <table id="table_user" border="2">
                         <p>
-                            <tr>
+                            <tr id="tr_user_title">
                         <p>
                         <td><input class="checkbox_normal" type="checkbox"></input>用户ID</td>
                         <td>用户名</td>
                         <td>用户类型</td>
+                        <td>用户密码</td>
+                        <td>注册时间</td>
                         <td>权限</td>
                         <td>所属用户组</td>
                         </p>
@@ -153,6 +155,8 @@
                             <td>temp</td>
                             <td>temp</td>
                             <td>temp</td>
+                            <td>temp</td>
+                            <td>temp</td>
                             </p>
                         </tr>
                         </p>
@@ -160,8 +164,9 @@
                 </form>
             </div>
             <div class="div_button">
-                <input class="input_button_normal" type="button" value="添加用户到选中用户组"/>
-                <input class="input_button_normal" type="button" value="显示所有独立用户"/>
+                <input id="btn_add_user" class="input_button_normal" type="button" value="添加用户"/>
+                <input id="btn_add_user2group" class="input_button_normal" type="button" value="添加用户到选中用户组"/>
+                <input id="btn_show_singleton_user" class="input_button_normal" type="button" value="显示所有独立用户"/>
             </div>
         </div>
     </div><!--div_main-->

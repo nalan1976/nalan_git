@@ -1,9 +1,13 @@
 package com.nalan.mdvr.service.impl;
 
 import com.nalan.mdvr.bean.PassInStruct;
+import com.nalan.mdvr.bean.StructUser2Group;
 import com.nalan.mdvr.bean.StructUserGroup;
+import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.entity.UserGroup;
+import com.nalan.mdvr.repository.IUserDao;
 import com.nalan.mdvr.repository.IUserGroupDao;
+import com.nalan.mdvr.repository.impl.UserDao;
 import com.nalan.mdvr.service.IUserGroupService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 @Data
 @Service
@@ -21,6 +26,8 @@ import java.util.List;
 public class UserGroupService implements IUserGroupService {
     @Autowired
     private IUserGroupDao userGroupDao;
+    @Autowired
+    private IUserDao userDao;
 
     public StructUserGroup addUserGroup(String userGroupName) {
         StructUserGroup structUserGroup = new StructUserGroup();
@@ -91,5 +98,47 @@ public class UserGroupService implements IUserGroupService {
         userGroupDao.flush();
         return getAll(structUserGroup);
 //        return null;
+    }
+    public StructUser2Group addUser2Group(Map<String, Integer> mapInfo){
+        UserGroup userGroup = new UserGroup();
+//        Set<User> user = new
+
+//        UserDao userDao = new UserDao();
+
+        for(String key : mapInfo.keySet()) {//nalan_*:JDK:map:iterate:*;
+            //第一个参数是用户组id，将待加入的用户对象取出
+            if(key.equals("0")) {
+//                userGroup.setUserGroupId(mapInfo.get(key));
+                userGroup = (UserGroup)userGroupDao.get(mapInfo.get(key));
+            }
+            else{//后面的参数都是待加入用户组的用户id，取出后依次获得对应的用户对象，并放入用户组对象中
+                User user = new User();
+//                user.setUserId(mapInfo.get(key));
+                //用哪一个Dao去取用户对象？
+                user = (User)userDao.get(mapInfo.get(key));
+                userGroup.getUsers().add(user);//User对象必须实现hashCode和equals
+            }
+        }
+//     保存用户组对象，此时中间表数据也应该保存
+        userGroupDao.save(userGroup);
+        userGroupDao.flush();
+        StructUser2Group structUser2Group = new StructUser2Group();
+        structUser2Group.setUserGroupList(userGroupDao.findAllByHql());
+        structUser2Group.setUserList(userGroup.getUsers());
+
+        return structUser2Group;
+
+
+//        return null;
+        /*
+            for (String key : map.keySet()) {
+                System.out.println(key + " ：" + map.get(key));
+            }
+            使用entrySet()遍历
+
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + " ：" + entry.getValue());
+            }
+        * */
     }
 }

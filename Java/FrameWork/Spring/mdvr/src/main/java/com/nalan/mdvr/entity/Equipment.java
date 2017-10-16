@@ -6,6 +6,7 @@
 package com.nalan.mdvr.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -16,6 +17,7 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "t_equipment")
+@EqualsAndHashCode(callSuper=true)
 @Data
 public class Equipment extends BaseEntity {
     /**

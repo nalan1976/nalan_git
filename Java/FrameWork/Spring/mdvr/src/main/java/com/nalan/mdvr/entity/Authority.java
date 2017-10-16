@@ -6,6 +6,7 @@
 package com.nalan.mdvr.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -19,6 +20,7 @@ import java.util.Set;
  * @pdOid 7ec60de7-a772-431a-98f6-02d829365a25
  */
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Entity
 @Table(name = "t_authority")
 public class Authority extends BaseEntity {

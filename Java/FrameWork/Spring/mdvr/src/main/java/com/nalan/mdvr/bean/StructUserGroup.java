@@ -11,7 +11,8 @@ public class StructUserGroup implements Serializable{
 
     class InnerUserGroup{
         private int userGroupId;
-
+        private String userGroupName;
+//自动生成
         public int getUserGroupId() {
             return userGroupId;
         }
@@ -27,10 +28,9 @@ public class StructUserGroup implements Serializable{
         public String getUserGroupName() {
             return userGroupName;
         }
-
-        private String userGroupName;
+//自动生成end
     }
-
+    //自动生成
     public void setInnerUserGroups(List<InnerUserGroup> innerUserGroups) {
         this.innerUserGroups = innerUserGroups;
     }
@@ -46,13 +46,14 @@ public class StructUserGroup implements Serializable{
     public void setUserGroup(UserGroup userGroup) {
         this.userGroup = userGroup;
     }
+    //自动生成end
 
     public StructUserGroup() {
         innerUserGroups = new ArrayList<InnerUserGroup>();
     }
 
     public List<InnerUserGroup> innerUserGroups;
-//    private InnerUserGroup obj = new InnerUserGroup();
+
     public UserGroup userGroup;
 
     public void setInfo(final int id, final String name){

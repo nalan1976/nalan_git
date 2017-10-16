@@ -6,6 +6,7 @@
 package com.nalan.mdvr.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
@@ -13,6 +14,7 @@ import javax.persistence.*;
  * @pdOid 694a4097-928a-4ac1-90ad-de1f667ce060
  */
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Table(name = "t_user_log")
 @Entity
 public class UserLog extends BaseEntity {

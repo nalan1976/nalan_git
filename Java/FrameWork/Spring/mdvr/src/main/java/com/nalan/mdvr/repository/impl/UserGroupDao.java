@@ -3,12 +3,14 @@ package com.nalan.mdvr.repository.impl;
 import com.nalan.mdvr.entity.UserGroup;
 import com.nalan.mdvr.repository.IUserGroupDao;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 import java.util.List;
 
 @Data
+@EqualsAndHashCode(callSuper=true)
 @Repository
 //下面这个声明是这个类90%存在的意义！！！
 public class UserGroupDao extends BaseDao<UserGroup, Serializable> implements IUserGroupDao<UserGroup, Serializable> {//nalan_*:EntityDao::*;

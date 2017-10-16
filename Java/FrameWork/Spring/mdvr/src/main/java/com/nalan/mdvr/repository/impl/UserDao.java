@@ -1,12 +1,14 @@
 package com.nalan.mdvr.repository.impl;
 
+import com.nalan.mdvr.bean.StructUser;
 import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.repository.IUserDao;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
-
+@EqualsAndHashCode(callSuper=true)
 @Data
 @Repository
 

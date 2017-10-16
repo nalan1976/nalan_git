@@ -6,6 +6,7 @@
 package com.nalan.mdvr.entity;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -13,6 +14,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "t_equip_group")
+@EqualsAndHashCode(callSuper=true)
 @Data
 /** @pdOid e664afe2-967d-4957-9a4d-50921493d8c4 */
 public class EquipGroup extends BaseEntity {

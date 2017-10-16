@@ -4,7 +4,9 @@
  * Purpose: Defines the Class User
  ***********************************************************************/
 package com.nalan.mdvr.entity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.*;
@@ -14,6 +16,7 @@ import java.util.*;
  *   1：超级用户admin
  * @pdOid b61eb705-e3fe-4307-8431-1a2bf357c6b7 */
 //@Data
+@EqualsAndHashCode(callSuper=true)
 @Table(name = "t_user")
 @Entity
 public class User extends BaseEntity {
@@ -34,6 +37,7 @@ public class User extends BaseEntity {
    /** @pdOid b07aead3-d466-4ff3-bdb7-841415085b64 */
 //   @Transient
    @ManyToMany(mappedBy = "users", cascade = CascadeType.ALL)//nalan_*:@ManyToMany:*;
+   @JsonIgnore//nalan_*:json:convert:*;   解决与userGroup互相引用，导致系列化为json时，递归出错的问题
    private Set <UserGroup> userGroups = new HashSet<>();
    /** @pdOid 5542e560-845e-4a80-a25a-0af4c453404e */
 //   @Transient

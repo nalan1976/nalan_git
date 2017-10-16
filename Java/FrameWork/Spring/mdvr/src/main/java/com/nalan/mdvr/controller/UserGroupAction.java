@@ -2,10 +2,7 @@ package com.nalan.mdvr.controller;
 
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nalan.mdvr.bean.PassInChange;
-import com.nalan.mdvr.bean.PassInStruct;
-import com.nalan.mdvr.bean.Person;
-import com.nalan.mdvr.bean.StructUserGroup;
+import com.nalan.mdvr.bean.*;
 import com.nalan.mdvr.entity.UserGroup;
 import com.nalan.mdvr.service.IUserGroupService;
 import com.nalan.mdvr.service.impl.UserGroupService;
@@ -85,5 +82,12 @@ public class UserGroupAction {
             return userGroupService.chgUserGroup(list.get(0).getUserGroupId(), list.get(1).getNewName());
         else
             return null;
+    }
+    @RequestMapping("addUser2Group")
+    public @ResponseBody
+    StructUser2Group addUser2Group(@RequestBody Map<String, Integer> info){//nalan_*:json:convert:map:*;
+        //第一个参数为用户组Id，后面的参数都为欲添加到该组的用户id
+        return userGroupService.addUser2Group(info);
+//        return null;
     }
 }
