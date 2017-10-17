@@ -36,18 +36,20 @@ public class User extends BaseEntity {
    private java.util.Date createDatetime;
    /** @pdOid b07aead3-d466-4ff3-bdb7-841415085b64 */
 //   @Transient
-   @ManyToMany(mappedBy = "users", cascade = CascadeType.ALL)//nalan_*:@ManyToMany:*;
+   @ManyToMany(mappedBy = "users", cascade = CascadeType.MERGE)//nalan_*:@ManyToMany:*;
    @JsonIgnore//nalan_*:json:convert:*;   解决与userGroup互相引用，导致系列化为json时，递归出错的问题
    private Set <UserGroup> userGroups = new HashSet<>();
    /** @pdOid 5542e560-845e-4a80-a25a-0af4c453404e */
 //   @Transient
-   @ManyToMany(cascade = CascadeType.ALL)
+//   @ManyToMany(cascade = CascadeType.ALL)
+//   @ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.MERGE})
+   @ManyToMany(cascade = CascadeType.MERGE)
    @JoinTable(name = "t_user_join_authority", joinColumns = @JoinColumn(name = "userId"),
       inverseJoinColumns = @JoinColumn(name = "authorityId"))//nalan_*:?:*;   写成别的会否有问题？不会有问题！
    private Set <Authority> userAuthoritys = new HashSet<>();
    /** @pdOid edc2d93d-311a-4ce3-a022-1f7c4af8bd80 */
 //   @Transient
-   @ManyToMany(mappedBy = "equipments", cascade = CascadeType.ALL)
+   @ManyToMany(mappedBy = "equipments", cascade = CascadeType.MERGE)
    private Set <EquipGroup> equipGroups = new HashSet<>();
 
    public void setUserId(Integer userId) {

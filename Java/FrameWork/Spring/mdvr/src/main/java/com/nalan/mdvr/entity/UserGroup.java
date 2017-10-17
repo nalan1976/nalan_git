@@ -72,7 +72,7 @@ public class UserGroup extends BaseEntity {
      * @pdOid 75fbebaa-dc9a-4812-938f-01f2f2878dc2
      */
 //   @Transient
-    @ManyToMany(cascade = CascadeType.ALL)//nalan_*:@ManyToMany:*;
+    @ManyToMany(cascade = CascadeType.MERGE)//nalan_*:@ManyToMany:*;
 //    多对多中，joinColumns写的都是本表在中间表的外键名称， inverseJoinColumns写的是另一个表的主键在中间表的外键名称
     @JoinTable(name = "t_user_join_usergroup",
             joinColumns = @JoinColumn(name = "userGroupId"),
@@ -82,7 +82,9 @@ public class UserGroup extends BaseEntity {
      * @pdOid 36634b01-4064-44b1-9024-149cf3f0beea
      */
 //    @Transient
-    @ManyToMany(cascade = CascadeType.ALL)
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @ManyToMany(cascade = {CascadeType.PERSIST,CascadeType.REMOVE,CascadeType.MERGE})
+    @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(name = "t_usergroup_join_authority",
             joinColumns = @JoinColumn(name = "userGroupId"),
             inverseJoinColumns = @JoinColumn(name = "id"))

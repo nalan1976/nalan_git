@@ -61,7 +61,7 @@ public class Equipment extends BaseEntity {
     /**
      * @pdOid 29448718-f2e0-46c8-a9be-1fc93b2009a1
      */
-    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "equipments")
+    @ManyToMany(cascade = CascadeType.MERGE, mappedBy = "equipments")
     private Set<EquipGroup> equipGroups = new HashSet<>();
 
 }

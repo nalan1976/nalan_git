@@ -165,6 +165,7 @@
             </div>
             <div class="div_button">
                 <input id="btn_add_user" class="input_button_normal" type="button" value="添加用户"/>
+                <input id="btn_del_user" class="input_button_normal" type="button" value="删除用户"/>
                 <input id="btn_add_user2group" class="input_button_normal" type="button" value="添加用户到选中用户组"/>
                 <input id="btn_show_singleton_user" class="input_button_normal" type="button" value="显示所有独立用户"/>
             </div>

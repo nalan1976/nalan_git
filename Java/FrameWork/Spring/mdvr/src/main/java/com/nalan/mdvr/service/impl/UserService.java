@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 //import com.nalan.mdvr.repository.impl.BaseDao;
 //import com.nalan.mdvr.repository.impl.UserDao;
@@ -61,5 +62,27 @@ public class UserService implements IUserService {
             return structUser;
         }
         return null;
+    }
+    public List<User> delUser(Map<String, Integer> userIdInfo){
+        for(Map.Entry<String, Integer> entry : userIdInfo.entrySet()){
+            userDao.deleteById(entry.getValue());
+        }
+        userDao.flush();
+        User user = new User();
+        List<User > list =  userDao.findAllByHql(user);//这里只是要一个类型
+        if(list.size() != 0)
+            return list;
+
+        return null;
+        /*
+            for (String key : map.keySet()) {
+                System.out.println(key + " ：" + map.get(key));
+            }
+            使用entrySet()遍历
+
+            for (Map.Entry<String, String> entry : map.entrySet()) {
+                System.out.println(entry.getKey() + " ：" + entry.getValue());
+            }
+        * */
     }
 }

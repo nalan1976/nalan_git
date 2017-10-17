@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 @Data
 @Controller
@@ -52,6 +53,12 @@ public class UserAction {
         }
 //        return userService.addUser(structUser);
         return userService.addUser(passInStructUser.getUserName(), passInStructUser.getUserType(), passInStructUser.getPassword());
+//        return null;
+    }
+    @RequestMapping("/jsp/setup/delUser")
+    public @ResponseBody
+    List<User> delUser(@RequestBody Map<String, Integer> userIdInfo){
+        return userService.delUser(userIdInfo);
 //        return null;
     }
 

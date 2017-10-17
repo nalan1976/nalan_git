@@ -21,6 +21,7 @@ public interface IBaseDao<T, ID extends Serializable> {
     T getBySql(String sqlString, Object... values);
     List<T> findAllByHql(T entityClass);
     void flush();
+    List<? extends Serializable> getAllBySql(String sql, Object... values);
 
 //    /**
 //     * <保存实体>

@@ -1,5 +1,6 @@
 package com.nalan.mdvr.repository.impl;
 
+import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.repository.IBaseDao;
 //import lombok.Data;
 import org.hibernate.query.Query;
@@ -118,7 +119,8 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
         }
         return (T)q.uniqueResult();
     }
-    /**传入查询实体类型
+    /**传入查询实体类型（即表对应的entity对象）,返回整个表记录
+     * 写得非常不好
      * */
     @Override
     public List<T> findAllByHql(T entityClass) {
@@ -126,15 +128,22 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
         String queryString = "from " + entityClass.getClass().getSimpleName();
         Query qr = sf.getCurrentSession().createQuery(queryString);
         return qr.list();
-/*        List<T> list = qr.list();
-        return list;*/
-
-//        if(list.size() != 0)
-//            return list;
-//        return null;
     }
     @Override
     public void flush(){
         sf.getCurrentSession().flush();
+    }
+    /**
+     * 根据给出的sql语句，返回所有符合查询条件结果集的list
+     */
+    @Override
+    public List<? extends Serializable> getAllBySql(String sql, Object... values){
+        Query qr = sf.getCurrentSession().createNativeQuery(sql, User.class);
+        if(values != null){
+            for(int i=0; i < values.length; i++){
+                qr.setParameter(i + 1, values[i]);//nalan???    为什么序号要从1开始，百思不得其解
+            }
+        }
+        return qr.getResultList();
     }
 }

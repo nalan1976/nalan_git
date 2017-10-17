@@ -3,6 +3,7 @@ package com.nalan.mdvr.controller;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nalan.mdvr.bean.*;
+import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.entity.UserGroup;
 import com.nalan.mdvr.service.IUserGroupService;
 import com.nalan.mdvr.service.impl.UserGroupService;
@@ -49,6 +50,12 @@ public class UserGroupAction {
 //        return null;
         return userGroupService.addUserGroup(userGroupName);
 
+    }
+    @RequestMapping("showUserGroup")
+    public @ResponseBody
+    List<User> showUserGroup(Integer userGroupId){
+        return userGroupService.showUserGroup(userGroupId);
+//        return null;
     }
 
     @RequestMapping("addUserGroup2")/*value = "addUserGroup2", method = RequestMethod.POST, consumes = "application/json"*/

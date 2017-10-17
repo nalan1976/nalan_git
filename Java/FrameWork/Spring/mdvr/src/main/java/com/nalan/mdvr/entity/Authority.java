@@ -38,9 +38,9 @@ public class Authority extends BaseEntity {
      * @pdOid 4eae8bac-d457-4d04-a5d4-137cfb5b2c19
      */
     private Integer type;
-    @ManyToMany(mappedBy = "userAuthoritys", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "userAuthoritys", cascade = CascadeType.MERGE)
     private Set<User> users = new HashSet<>();
-    @ManyToMany(mappedBy = "userGroupAuthoritys", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "userGroupAuthoritys", cascade = CascadeType.MERGE)
     private Set<UserGroup> userGroups = new HashSet<>();
 
 }
