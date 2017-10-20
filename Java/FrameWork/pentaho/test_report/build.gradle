@@ -1,0 +1,27 @@
+group 'pentaho'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+ext.kettle_vision = '8.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+    maven {url "http://repo.pentaho.org/artifactory/repo"}
+//    maven {url "http://maven-repository.com/artifact/pentaho-kettle"}
+}
+
+dependencies {
+/*    compile("pentaho-kettle:kettle-core:${project.ext.kettle_vision}")
+    compile("pentaho-kettle:kettle-engine:${project.ext.kettle_vision}")
+    compile("pentaho-kettle:kettle-ui-swt:${project.ext.kettle_vision}")
+    compile("pentaho-kettle:metastore:${project.ext.kettle_vision}")
+    compile("pentaho-kettle:kettle-dbdialog:${project.ext.kettle_vision}")
+    compile("pentaho-kettle:kettle-db:${project.ext.kettle_vision}")*/
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
