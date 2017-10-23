@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nalan.mdvr.bean.PassInChange;
 import com.nalan.mdvr.bean.PassInStructUser;
 import com.nalan.mdvr.bean.StructUser;
+import com.nalan.mdvr.bean.pentaho.Sample4;
+import com.nalan.mdvr.bean.pentaho.Sample4Modify;
 import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.entity.UserGroup;
 import com.nalan.mdvr.entity.UserLog;
@@ -20,6 +22,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -61,6 +65,16 @@ public class UserAction {
         return userService.delUser(userIdInfo);
 //        return null;
     }
-
+    @RequestMapping("reporting")
+    public void generatorReprot(HttpServletRequest request, HttpServletResponse response){
+        Sample4Modify sample4Modify = new Sample4Modify();
+        sample4Modify.init();
+        try {
+            sample4Modify.doGet(request, response);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        sample4Modify.destroy();
+    }
 
 }

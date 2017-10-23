@@ -43,6 +43,7 @@
 19）自己new的对象是不会享受到自动注入的待遇，: )
 20）Bean转Json时，若2个对象中有集合属性互相引用，会造成递归出错，需要在一方的属性上使用@JsonIgnore，禁止Json转化此属性
 21）前台的一维数组，转化为Json到后台时是以0,1,2等为键值的map（注意接收入参的地方必须加@RequestBody注解）；
+22）不导入spring-context-support包，quartz无法使用，又是一个大坑；
 
 
 

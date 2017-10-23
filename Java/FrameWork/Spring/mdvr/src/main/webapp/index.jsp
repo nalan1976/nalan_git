@@ -26,5 +26,8 @@
       <input class="text_login" type="password" name="password"/>
       <input id="button_login" type="submit" value="登陆"/>
     </form>
+  <form action="reporting">
+    <input id="button_login" type="submit" value="生成报表"/>
+  </form>
   </body>
 </html>

@@ -7,12 +7,28 @@ apply plugin:'idea'
 
 sourceCompatibility = 1.8
 
+//编译JAVA文件时采用UTF-8
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+ext.quartzVersion = '2.2.3'//'2.3.0'
+
 repositories {
+    flatDir {
+        dirs "${rootProject.projectDir}/lib"
+    }
     mavenLocal()
     maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
 }
 
 dependencies {
+    // 增加项目目录/lib下所有jar包
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+//    quarts
+    compile("org.quartz-scheduler:quartz:${project.ext.quartzVersion}")
+//    compile("org.quartz-scheduler:quartz-jobs:${project.ext.quartzVersion}")
+    //end quartz
     compile("org.projectlombok:lombok:1.16.18")
 // Jackson可以轻松的将Java对象转换成json对象和xml文档,同样也可以将json、xml转换成Java对象
     compile("com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.9.1")//nalan_*:json:setup:*;
@@ -23,6 +39,8 @@ dependencies {
 //    compile("org.codehaus.jackson:jackson-mapper-asl:1.9.13")//nalan?
 
     compile("org.springframework:spring-context:4.3.10.RELEASE")
+    //没有下面这个包，quartz没法用
+    compile("org.springframework:spring-context-support:4.3.10.RELEASE")//nalan_*:setup:quartz:*;
     compile("org.springframework:spring-beans:4.3.10.RELEASE")
     compile("org.springframework:spring-core:4.3.10.RELEASE")
     compile group: 'org.springframework', name: 'spring-orm', version: '4.3.10.RELEASE'
