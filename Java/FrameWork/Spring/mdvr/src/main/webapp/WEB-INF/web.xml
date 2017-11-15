@@ -47,6 +47,7 @@
         <url-pattern>/</url-pattern>
         <!--<url-pattern>*.do</url-pattern>-->
     </servlet-mapping>
+
     <!--springMVC监听器，为解决获取不到request添加-->
     <!-- 使用request，session和globalSession这3种作用域，必须配置 -->
     <listener>
@@ -79,6 +80,7 @@
         <filter-name>encodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    <!--  字符集过滤 end -->
 
     <!-- 利用spring解决hibernate延迟加载问题，注释掉会怎样？ -->
     <filter>
@@ -91,7 +93,13 @@
     </filter-mapping>
     <!--解决hibernate延迟加载问题end-->
 
-    <!--  字符集过滤 end -->
+    <!--超时时间设置，客户端连续两次与服务器交互间隔时间最长为200分钟，200分钟后session.getAttribute()获取的值为空-->
+    <session-config>
+        <session-timeout>200</session-timeout>
+    </session-config>
+    <!--超时时间设置end-->
+    
+
 
     <!--添加自定义标签支持-->
     <!--<jsp-config>-->
@@ -109,4 +117,15 @@
     <!--</jsp-config>-->
     <!--自定义标签支持end-->
 
+    <!--***********************************校验用户信息的Filter*****************************************-->
+    <!--filter的作用是在访问任何页面时，若没有权限则返回登录页面，会被调用多次不知是否有问题-->
+<!--    <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.nalan.mdvr.controller.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>-->
+    <!--***********************************end-校验用户信息的Filter*****************************************-->
 </web-app>

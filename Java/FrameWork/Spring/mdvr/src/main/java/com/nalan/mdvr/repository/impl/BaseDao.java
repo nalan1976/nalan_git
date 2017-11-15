@@ -5,6 +5,7 @@ import com.nalan.mdvr.repository.IBaseDao;
 //import lombok.Data;
 import org.hibernate.query.Query;
 //import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.orm.hibernate5.SessionFactoryUtils;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
@@ -44,6 +45,7 @@ public class BaseDao<T, ID extends Serializable> implements IBaseDao<T, ID> {
             Type[] params = ((ParameterizedType)genType).getActualTypeArguments();
             entityClass = (Class)params[0];//nalan? 参数里是什么？为什么取第一个
         }
+//        SessionFactoryUtils.getDataSource(sf).getConnection(). sfu = new SessionFactoryUtils();
 
         return entityClass;
     }

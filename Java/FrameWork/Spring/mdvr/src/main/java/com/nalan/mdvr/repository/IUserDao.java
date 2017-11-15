@@ -9,6 +9,6 @@ import java.io.Serializable;
 public interface IUserDao<T, ID extends Serializable>extends IBaseDao<T, ID> {
     boolean hasUser(T t);
 //    boolean hasUser(User t);
-    boolean checkLoginInfo(User user);
+    User checkLoginInfo(User user);
 
 }

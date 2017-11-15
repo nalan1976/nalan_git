@@ -273,6 +273,10 @@ function add_user_row(obj) {
 }
 
 $(document).ready(function () {
+/*    $("#btn_test").click()(function () {
+        // $.session.get('MENU_USER');
+        alert("");
+    });*/
     $("#btn_del_user").click(function (){
         if($("#table_user input:checked").length < 1)
             return;
@@ -374,6 +378,8 @@ $(document).ready(function () {
             '<td id="td_4">test1</td>' +
             '<td id="td_5" class="td_hidden" hidden="hidden"></td>' +
             '</p></tr>');
+        // $.session.get('MENU_USER');
+        // var myName='<%=session.getAttribute("MENU_USER")%>';
         //添加确定按钮
         var obj = $("#table_user_group tr:last").children("td").filter("#td_5");
 //                obj.css("background-color","#00A2CA");

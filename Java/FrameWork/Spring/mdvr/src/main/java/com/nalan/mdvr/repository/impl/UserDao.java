@@ -23,13 +23,13 @@ public class UserDao extends BaseDao<User, Serializable> implements IUserDao<Use
     }
 
     @Override
-    public boolean checkLoginInfo(User user){
+    public User checkLoginInfo(User user){
         User u = (User)(getBySql(STR_QUERY_USER, user.getUserName()));
         if(u != null && u.getPassword().equals(user.getPassword()))
         {
-            return true;
+            return u;
         }
-        return false;
+        return null;
     }
 
 }

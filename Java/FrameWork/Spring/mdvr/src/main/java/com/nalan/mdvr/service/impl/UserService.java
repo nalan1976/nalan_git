@@ -1,5 +1,6 @@
 package com.nalan.mdvr.service.impl;
 
+import com.nalan.mdvr.bean.StructMenu;
 import com.nalan.mdvr.bean.StructUser;
 import com.nalan.mdvr.entity.User;
 import com.nalan.mdvr.repository.IUserDao;
@@ -10,9 +11,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 //import com.nalan.mdvr.repository.impl.BaseDao;
 //import com.nalan.mdvr.repository.impl.UserDao;
@@ -26,12 +25,15 @@ public class UserService implements IUserService {
     private IUserDao userDao;
 
     @Override
-    public boolean checkUser(String username, String password) {
+    public User checkUser(String username, String password) {
         User user = new User();
         user.setUserName(username);
         user.setPassword(password);
-//        return userDao.hasUser(user);
         return userDao.checkLoginInfo(user);
+/*        if(userDao.checkLoginInfo(user) != null){
+            return user;
+        }
+        return null;*/
     }
 
     @Override
@@ -84,5 +86,21 @@ public class UserService implements IUserService {
                 System.out.println(entry.getKey() + " ：" + entry.getValue());
             }
         * */
+    }
+    public StructMenu getMenu(){
+
+        List set = new ArrayList();
+        Map<Integer, String> map = new TreeMap<>();
+        map.put(1, "setup/userGroup");
+        map.put(101, "setup/userGroup");
+        set.add(map);
+
+        Map<Integer, String> map2 = new TreeMap<>();
+        map2.put(2, "reporting");
+        set.add(map2);
+
+        StructMenu menu = new StructMenu();
+        menu.setMenuList(set);
+        return menu;
     }
 }

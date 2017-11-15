@@ -27,7 +27,7 @@ import java.util.Map;
 @Controller
 @Scope("prototype")
 @RequestMapping("/jsp/setup")//nalan?    jsp/setup
-public class UserGroupAction {
+public class UserGroupAction extends BaseController{
     @Autowired
     private IUserGroupService userGroupService;
 

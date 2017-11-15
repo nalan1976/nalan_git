@@ -88,7 +88,8 @@
             <ref bean="jobDetail" />
         </property>
         <property name="cronExpression">
-            <value>0/5 * * * * ?</value>
+            <!--60秒执行一次（最多只能设60秒）-->
+            <value>0/60 * * * * ?</value>
         </property>
     </bean>
     <!-- 调度工厂 -->

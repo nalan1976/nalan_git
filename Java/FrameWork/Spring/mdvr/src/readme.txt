@@ -1,5 +1,8 @@
 功能：
-1）
+1）整合了pentaho到Spring输出pdf文件：
+    a）使用report designer版本： prd-ce-5.0.1-stable，github中没有将相关jar文件提交，可参考test-servlet项目中的lib目录；
+    b）使用了动态传递参数，可配合预定义的查询在运行时改变报表/图标的部分行为；
+2）整合了quartz，使用了CronTrigger，未实现动态修改触发条件
 
 
 注意：
@@ -13,7 +16,7 @@
 2）所有数据库相关特性必须控制在Dao层以内，否则就失去了分层的实际意义，而且也容易产生破窗效应
 3）cascade在这个项目中是否应该只在增加的时候关联（CascadeType.PERSIST）？
 答：一般使用CascadeType.MERGE
-4）Action必须是多实例，其它一般都是单实例，因为无需保存状态
+4）Action必须是多实例，其它一般都是单实例，因为无需保存状态(在spring中Action也可以为单实例！)
 
 
 疑问：
@@ -44,6 +47,33 @@
 20）Bean转Json时，若2个对象中有集合属性互相引用，会造成递归出错，需要在一方的属性上使用@JsonIgnore，禁止Json转化此属性
 21）前台的一维数组，转化为Json到后台时是以0,1,2等为键值的map（注意接收入参的地方必须加@RequestBody注解）；
 22）不导入spring-context-support包，quartz无法使用，又是一个大坑；
+23）uuid作为主键需要自己传入，或建立触发器自动生成主键（假设多对多不维护关系的一方，也使用触发器会否有问题？）
+24）在测试用例中实现了最简单的shiro文本认证
+25）使用filter进行权限过滤：只是最基本的数据验证，逻辑并没有走通
+26）使用session保存用户权限等逻辑没有完成，只是搭了一个框架
+
+
+user和userGroup级联添加、删除测试结果：
+CascadeType.ALL：
+1）删除无关联的用户，只删除当前用户，但将所有双向关联的表都select一遍（t_user_group反而没有）
+2）删除有关联的任一用户或用户组，所有有关联用户、用户组都删除，中间表被清空
+CascadeType.MERGE：
+添加时会级联保存，删除不会，能满足需求，但select语句好像还是多了一些
+
+
+#为t_menu的uuid字段建立触发器
+DELIMITER $$
+
+CREATE
+  /*[DEFINER = { user | CURRENT_USER }]*/
+TRIGGER `mdvr`.`create_uuid1` BEFORE INSERT
+  ON `mdvr`.`t_menu`
+FOR EACH ROW BEGIN
+  IF new.id IS NULL  THEN SET new.id = REPLACE((SELECT UUID()), '-', '');
+  END IF;
+END$$
+
+DELIMITER ;
 
 
 

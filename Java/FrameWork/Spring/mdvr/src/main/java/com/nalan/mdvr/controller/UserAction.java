@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nalan.mdvr.bean.PassInChange;
 import com.nalan.mdvr.bean.PassInStructUser;
+import com.nalan.mdvr.bean.StructMenu;
 import com.nalan.mdvr.bean.StructUser;
 import com.nalan.mdvr.bean.pentaho.Sample4;
 import com.nalan.mdvr.bean.pentaho.Sample4Modify;
@@ -14,6 +15,7 @@ import com.nalan.mdvr.repository.impl.UserDao;
 import com.nalan.mdvr.service.IUserService;
 import com.nalan.mdvr.service.impl.UserService;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -28,18 +30,31 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import static com.nalan.mdvr.cons.constant.LOGIN_TO_URL;
+import static com.nalan.mdvr.cons.constant.MENU_USER;
+
 @Data
+@EqualsAndHashCode(callSuper=false)
 @Controller
 @Scope("prototype")
 @RequestMapping("/")
-public class UserAction {
+public class UserAction extends BaseController{
     @Autowired
     private IUserService userService;
 
     @RequestMapping("login")
     public String login(@RequestParam(value="username", required = true) String username,//nalan?   required=true没起作用？
-                        @RequestParam(value="password", required = true) String password) {
-        if (userService.checkUser(username, password)) {
+                        @RequestParam(value="password", required = true) String password, HttpServletRequest request) {
+        User dbUser = userService.checkUser(username, password);
+        if (dbUser != null) {
+//            User dbUser = new User();
+            dbUser.setUserType(dbUser.getUserType());
+            setSessionUser(request,dbUser);
+            String toUrl = (String)request.getSession().getAttribute(LOGIN_TO_URL);
+            request.getSession().removeAttribute(LOGIN_TO_URL);
+            //读取并设置登陆用户菜单权限
+            StructMenu menu = userService.getMenu();
+            request.getSession().setAttribute(MENU_USER, menu);
             return "setup/userGroup";
         }
         return "error";

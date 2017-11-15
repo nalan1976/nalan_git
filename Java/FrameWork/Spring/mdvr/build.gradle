@@ -25,6 +25,10 @@ repositories {
 dependencies {
     // 增加项目目录/lib下所有jar包
     compile fileTree(dir: 'lib', include: ['*.jar'])
+    //shiro
+    compile("org.apache.shiro:shiro-core:1.4.0")
+    compile("commons-logging:commons-logging:1.2")
+    //end shiro
 //    quarts
     compile("org.quartz-scheduler:quartz:${project.ext.quartzVersion}")
 //    compile("org.quartz-scheduler:quartz-jobs:${project.ext.quartzVersion}")
@@ -55,10 +59,10 @@ dependencies {
 
     compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
     compile("org.hibernate:hibernate-ehcache:5.2.10.Final")
-
+    //JSTL依赖包
     compile("javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1")
     compile("taglibs:standard:1.1.2")
-
+    //JSTL end
     compile("org.apache.tomcat:servlet-api:6.0.53")
     compile("org.apache.tomcat:jsp-api:6.0.53")
 

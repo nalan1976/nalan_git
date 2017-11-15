@@ -23,15 +23,8 @@ INSERT INTO `t_user_join_usergroup` (`userGroupId`, `userId`) values (3, 4);
 INSERT INTO `t_user_join_usergroup` (`userGroupId`, `userId`) values (3, 6);
 INSERT INTO `t_user_join_usergroup` (`userGroupId`, `userId`) values (4, 5);
 INSERT INTO `t_user_join_usergroup` (`userGroupId`, `userId`) values (4, 6);
-/*
-测试结果：
-CascadeType.ALL：
-1）删除无关联的用户，只删除当前用户，但将所有双向关联的表都select一遍（t_user_group反而没有）
-2）删除有关联的任一用户或用户组，所有有关联用户、用户组都删除，中间表被清空
-CascadeType.MERGE：
-添加时会级联保存，删除不会，能满足需求，但select语句好像还是多了一些
-*/
-
-
-
-
+#注释块不起作用，不知为何，加上就报异常 //nalan???
+#初始化菜单项数据：一级菜单id区间为1-100，二级101-1000
+INSERT INTO t_menu(menuId, fatherId, menuName, url) VALUES (1, -1, "系统设置", "setup/userGroup");
+INSERT INTO t_menu(menuId, fatherId, menuName, url) VALUES (2, -1, "报表", "reporting");
+INSERT INTO t_menu(menuId, fatherId, menuName, url) VALUES (101, 1, "用户组管理", "setup/userGroup");
