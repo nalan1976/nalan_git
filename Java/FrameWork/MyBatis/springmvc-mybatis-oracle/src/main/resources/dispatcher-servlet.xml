@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 启动注解驱动的spring MVC功能，注册请求url和注解POJO类方法的映射默认加载json转换器，-->
+    <mvc:annotation-driven />
+
+    <!--自动扫描的范围：这里决定action的@RequestMapping映射是否起作用-->
+    <context:component-scan base-package="com.nalan.batis.controller" />
+
+    <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--有一些没有用到的功能罗列一下，详情可参考https://www.cnblogs.com/cainiaomahua/p/6306991.html-->
+    <!-- 静态资源处理 css js imgs -->
+    <!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
+    <!--文件上传-->
+    <!-- 配置ViewResolver。可用多个ViewResolver。使用order属性排序。 InternalResourceViewResolver 放在最后 -->
+</beans>

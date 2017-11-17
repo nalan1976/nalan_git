@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+<!--********************************************配置Spring***************************************-->
+<!-- 自动扫描 -->
+<!--当使用<context:component-scan/>后，即可将<context:annotation-config/>省去-->
+<context:component-scan base-package="com.nalan.batis">
+    <!-- 扫描时跳过 @Controller 注解的JAVA类（控制器） -->
+    <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+</context:component-scan>
+
+<!--加载数据库配置-->
+<import resource="spring-database.xml"/>
+</beans>

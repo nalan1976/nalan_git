@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace的全类型名要和接口名相同-->
+<!--useGeneratedKeys="true"-->
+<mapper namespace="com.nalan.batis.dao.ITest">
+    <!--//nalan_*:mybatis:param:*;-->
+    <!--    <insert id="insertTest">insert into T_TEST (id,username,password)
+          values (#{id, jdbcType=NUMERIC},#{username, jdbcType=VARCHAR},#{password, jdbcType=VARCHAR})-->
+    <insert id="insertTest" useGeneratedKeys="true" keyProperty="id"><!--//nalan_*:mybatis:param:*;-->
+        insert into T_TEST (username,password)
+                values (#{username},#{password})
+  </insert>
+</mapper>

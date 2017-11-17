@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MyBatis-springmvc-mybatis-oracle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MyBatis-springmvc-mybatis-oracle_test.iml" group="springmvc-mybatis-oracle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle.iml" filepath="$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle_main.iml" group="springmvc-mybatis-oracle" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springmvc-mybatis-oracle_test.iml" group="springmvc-mybatis-oracle" />
+    </modules>
+  </component>
+</project>
