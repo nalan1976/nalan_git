@@ -21,8 +21,9 @@ package easy.string;
  Input: [1,3,5,6], 0
  Output: 0
  通过此例学到：
- 1）JUnit基本用法
+ 1）JUnit基本用法，TestNG人家说比JUnit还要好一些
  2）复习了二分法查找算法
+ 3）重建了leetcode目录，复习了git的用法
 * */
 public class SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {

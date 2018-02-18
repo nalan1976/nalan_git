@@ -41,7 +41,7 @@ public class CountAndSay {
         StringBuilder curBuf = new StringBuilder("");
         //到这里n至少为2，从第二个字符开始循环
         for (int i = 1; i < n; i++){
-            curBuf.delete(0, curBuf.length());//清空
+            curBuf.delete(0, curBuf.length());//清空  //nalan_*:StringBuilder::*;
             low = 0;
             fast = 0;
             while ( fast < lastBuf.length() ){

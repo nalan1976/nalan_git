@@ -19,30 +19,30 @@
         <element id="directory" name="lib">
           <element id="file-copy" path="$PROJECT_DIR$/lib/libbase-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/bsh-1.3.0.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/libswing-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/librepository-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/barbecue-1.5-beta1.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/libformat-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/libserializer-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/itext-rtf-2.1.7.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/hsqldb-1.8.0.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/libfonts-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/bsf-2.4.0.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/pentaho-reporting-engine-legacy-charts-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/pentaho-reporting-engine-classic-core-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/libloader-5.0.1-stable.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/lib/itext-2.1.7.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/libxml-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/poi-3.9.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/hsqldb-1.8.0.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/libdocbundle-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/libpixie-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/barbecue-1.5-beta1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/libfonts-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/pentaho-reporting-engine-wizard-core-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/libsparkline-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/bsf-2.4.0.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.44.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/libformula-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/libswing-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/libformat-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/pentaho-reporting-engine-legacy-charts-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/jfreechart-1.0.13.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/jcommon-1.0.16.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/pentaho-reporting-engine-classic-core-5.0.1-stable.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/libserializer-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/libloader-5.0.1-stable.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/itext-2.1.7.jar" />
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-core:1.4.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.3.10.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-orm:4.3.10.RELEASE" />
@@ -61,12 +61,10 @@
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.9.1" />
           <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aspects:4.3.10.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.10" />
           <element id="library" level="project" name="Gradle: net.sourceforge.cglib:com.springsource.net.sf.cglib:2.2.0" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-ehcache:5.2.10.Final" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:5.2.10.Final" />
           <element id="library" level="project" name="Gradle: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
-          <element id="library" level="project" name="Gradle: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:jsp-api:6.0.53" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:servlet-api:6.0.53" />
           <element id="library" level="project" name="Gradle: commons-fileupload:commons-fileupload:1.3.3" />
@@ -75,7 +73,6 @@
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-web:2.9.0" />
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-core:2.9.0" />
           <element id="library" level="project" name="Gradle: org.apache.logging.log4j:log4j-api:2.9.0" />
-          <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-cache:1.4.0" />
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-hash:1.4.0" />
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-cipher:1.4.0" />
@@ -85,23 +82,26 @@
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-crypto-core:1.4.0" />
           <element id="library" level="project" name="Gradle: org.apache.shiro:shiro-lang:1.4.0" />
           <element id="library" level="project" name="Gradle: net.sf.ehcache:ehcache:2.10.3" />
-          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.1" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.1" />
           <element id="library" level="project" name="Gradle: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" />
           <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" />
-          <element id="library" level="project" name="Gradle: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" />
           <element id="library" level="project" name="Gradle: org.javassist:javassist:3.20.0-GA" />
           <element id="library" level="project" name="Gradle: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Gradle: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.1.Final" />
           <element id="library" level="project" name="Gradle: org.jboss:jandex:2.0.3.Final" />
           <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.3.0" />
-          <element id="library" level="project" name="Gradle: dom4j:dom4j:1.6.1" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:el-api:6.0.53" />
           <element id="library" level="project" name="Gradle: commons-io:commons-io:2.2" />
           <element id="library" level="project" name="Gradle: commons-beanutils:commons-beanutils:1.9.3" />
-          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Gradle: commons-collections:commons-collections:3.2.2" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.10/aspectjweaver-1.8.10.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar" />
         </element>
       </element>
     </root>

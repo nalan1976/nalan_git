@@ -16,5 +16,12 @@
     <input type="password" name="password">password:</input>
     <input type="submit"></input>
 </form>
+<div>
+    <form method="post" action="/batis/upload_file" enctype="multipart/form-data"  >
+        <input type="file"  name="upLoadFile" value="选择上传的文件" />
+        <!-- Html5 多文件上传   multiple="multiple" -->
+        <input type="submit" value="上传单个文件测试"/>
+    </form>
+</div>
 </body>
 </html>

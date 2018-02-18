@@ -1,7 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abd3b1c1-d514-4b68-9c0b-1e340546aaa0" name="Default" comment="" />
+    <list default="true" id="abd3b1c1-d514-4b68-9c0b-1e340546aaa0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/SearchInsertPosition.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/string/SearchInsertPositionTest.java" />
+      <change beforePath="$PROJECT_DIR$/../BookCode/TIJ4-code/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../BookCode/TIJ4-code/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/HibernateTest/Hibernate00/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/HibernateTest/Hibernate00/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/HibernateTest/Hibernate00/src/com/nalan/framework/hibernate/test/mapping/One2MulJoinTableTwoway.java" afterPath="$PROJECT_DIR$/../FrameWork/HibernateTest/Hibernate00/src/com/nalan/framework/hibernate/test/mapping/One2MulJoinTableTwoway.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-mysql-read-write-split/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-mysql-read-write-split/src/main/resources/log4j.properties" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/artifacts/Gradle___com_nalan_project___springmvc_mybatis_oracle_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/artifacts/Gradle___com_nalan_project___springmvc_mybatis_oracle_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/modules/MyBatis-springmvc-mybatis-oracle_test.iml" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/modules/MyBatis-springmvc-mybatis-oracle_test.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/modules/springmvc-mybatis-oracle_main.iml" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/.idea/modules/springmvc-mybatis-oracle_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/build.gradle" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/readme.txt" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/readme.txt" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/controller/CtrMain.java" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/controller/CtrMain.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/dao/ITest.java" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/dao/ITest.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/entity/User.java" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/entity/User.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/service/ITestService.java" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/service/ITestService.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/service/TestService.java" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/java/com/nalan/batis/service/TestService.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/resources/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/resources/mybatis/testMapper.xml" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/resources/mybatis/testMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/webapp/WEB-INF/jsp/error_fileupload.jsp" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/webapp/WEB-INF/jsp/error_fileupload.jsp" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/../FrameWork/MyBatis/springmvc-mybatis-oracle/src/main/webapp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/artifacts/Gradle___com_nalan_project___mdvr_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/artifacts/Gradle___com_nalan_project___mdvr_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__commons_lang_commons_lang_2_6.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_10.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_10.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_21.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_7_21.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__taglibs_standard_1_1_2.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/libraries/Gradle__taglibs_standard_1_1_2.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/modules/mdvr_main.iml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/modules/mdvr_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/modules/mdvr_test.iml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/modules/mdvr_test.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mdvr/out/test/resources/shiro.ini" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/readme.txt" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/readme.txt" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/src/main/java/com/ssh/entity/Person.java" afterPath="$PROJECT_DIR$/../FrameWork/Spring/mvc_hbt_01/src/main/java/com/ssh/entity/Person.java" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/Spring/sf_test_01/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.gradle/4.1-rc-1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.gradle/4.1-rc-1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/gradle.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/libraries/lib.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/modules/pdr-test2_main.iml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/modules/pdr-test2_main.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/modules/pdr-test2_test.iml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/modules/pdr-test2_test.iml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/build.gradle" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/barbecue-1.5-beta1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/bsf-2.4.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/bsh-1.3.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/commons-logging-1.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/hsqldb-1.8.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/itext-2.1.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/itext-rtf-2.1.7.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/jcommon-1.0.16.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/jfreechart-1.0.13.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libbase-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libdocbundle-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libfonts-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libformat-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libformula-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libloader-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libpixie-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/librepository-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libserializer-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libsparkline-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libswing-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/libxml-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/mysql-connector-java-5.1.44.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/pentaho-reporting-engine-classic-core-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/pentaho-reporting-engine-legacy-charts-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/pentaho-reporting-engine-wizard-core-5.0.1-stable.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/pdr-test2/src/main/resources/lib/poi-3.9.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../FrameWork/pentaho/test_report/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../FrameWork/pentaho/test_report/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spi.iml" afterPath="$PROJECT_DIR$/.idea/modules/spi.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/spi_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/spi_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestJunit.java" afterPath="$PROJECT_DIR$/src/test/java/TestJunit.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -68,7 +153,7 @@
       <file leaf-file-name="MergeTwoSortedLists.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/recursion/MergeTwoSortedLists.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
+            <state relative-caret-position="864">
               <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="e#730#731#0" expanded="true" />
@@ -83,7 +168,7 @@
       <file leaf-file-name="RemoveElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/array/RemoveElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1323">
+            <state relative-caret-position="1377">
               <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,13 +177,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImplementStrStr.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImplementStrStr.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/ImplementStrStr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            <state relative-caret-position="270">
+              <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchInsertPosition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/SearchInsertPosition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchInsertPositionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/string/SearchInsertPositionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestJunit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestJunit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="e#80#81#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,6 +251,9 @@
     <replaceStrings>
       <replace>lst2</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -490,11 +613,13 @@
         <option value="$PROJECT_DIR$/src/com/nalan/base/thread/BaseTestThread.java" />
         <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/linkedlist/MergeTwoSortedLists.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/TestJunit.java" />
         <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/recursion/MergeTwoSortedLists.java" />
         <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/array/RemoveDuplicatesfromSortedArray.java" />
         <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/array/RemoveElement.java" />
         <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/ImplementStrStr.java" />
+        <option value="$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/SearchInsertPosition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestJunit.java" />
+        <option value="$PROJECT_DIR$/src/test/java/string/SearchInsertPositionTest.java" />
       </list>
     </option>
   </component>
@@ -516,6 +641,9 @@
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -531,7 +659,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -544,13 +672,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -844,7 +972,8 @@
       <workItem from="1517736342421" duration="49264000" />
       <workItem from="1518153076260" duration="13000" />
       <workItem from="1518153095032" duration="26578000" />
-      <workItem from="1518226598324" duration="4778000" />
+      <workItem from="1518226598324" duration="5145000" />
+      <workItem from="1518233025702" duration="9719000" />
     </task>
     <servers />
   </component>
@@ -857,7 +986,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105734000" />
+    <option name="totallyTimeSpent" value="115820000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -868,23 +1006,25 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36530173" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38038793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38038793" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33943966" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3265086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23766094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2414163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -894,7 +1034,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -981,6 +1120,47 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/array/RemoveElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/recursion/MergeTwoSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1464#1465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/ImplementStrStr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/recursion/MergeTwoSortedLists.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -1244,21 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestJunit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="51" lean-forward="false" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/instrument/InstrumentationImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1275,7 +1440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/recursion/MergeTwoSortedLists.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="864">
           <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="e#730#731#0" expanded="true" />
@@ -1296,7 +1461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/array/RemoveElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
+        <state relative-caret-position="1377">
           <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1319,10 +1484,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestJunit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#80#81#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="58" lean-forward="false" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/ImplementStrStr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        <state relative-caret-position="270">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nalan/learn/arithmetic/easy/string/SearchInsertPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/string/SearchInsertPositionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1386,7 +1588,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

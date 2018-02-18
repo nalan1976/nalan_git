@@ -3,8 +3,12 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace的全类型名要和接口名相同-->
-<!--useGeneratedKeys="true"-->
 <mapper namespace="com.nalan.batis.dao.ITest">
+    <resultMap id="userMap" type="com.nalan.batis.entity.User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
     <!--//nalan_*:mybatis:param:*;-->
     <!--    <insert id="insertTest">insert into T_TEST (id,username,password)
           values (#{id, jdbcType=NUMERIC},#{username, jdbcType=VARCHAR},#{password, jdbcType=VARCHAR})-->
@@ -12,4 +16,10 @@
         insert into T_TEST (username,password)
                 values (#{username},#{password})
   </insert>
+    <select id="selectTest" resultMap="userMap">
+      select * from T_TEST where id=#{id}
+    </select>
+    <select id="selectList" resultMap="userMap" fetchSize="10">
+        select * from T_TEST where id>#{id}
+    </select>
 </mapper>
