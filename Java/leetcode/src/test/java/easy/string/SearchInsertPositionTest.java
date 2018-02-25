@@ -42,6 +42,7 @@ public class SearchInsertPositionTest {
 //    public SearchInsertPositionTest(int[] arr, int tgt) {
 //        this.arr = arr;
 //        this.tgt = tgt;
+
 //    }
     @Test
     public void test(){
