@@ -16,8 +16,7 @@ public class TestCopy {
         DelegatingVehicleTracker dvt = new DelegatingVehicleTracker(map);
 
         System.out.println("getLocation : "+ dvt.getLocation("sh").hashCode() +
-                " X is : " + dvt.getLocation("sh").getX() +
-                " Y is : " + dvt.getLocation("sh").getY());
+                " X is : " + dvt.getLocation("sh").getX() + " Y is : " + dvt.getLocation("sh").getY());
 
         Map getLocations = dvt.getLocations();
         Map getLocationsAsStatic = dvt.getLocationsAsStatic();

@@ -19,10 +19,13 @@ public class TestHarness {
             Thread t = new Thread() {
                 public void run() {
                     try {
+                        System.out.println("run thread : "  + "before await()");
                         startGate.await();
                         try {
+                            System.out.println("run thread : "  + "before run()");
                             task.run();
                         } finally {
+                            System.out.println("run thread : "  + "before endGate.countDown()");
                             endGate.countDown();
                         }
                     } catch (InterruptedException ignored) {
@@ -32,9 +35,12 @@ public class TestHarness {
             t.start();
         }
 
+        Thread.sleep(500);
         long start = System.nanoTime();
+        System.out.println("main : "+ "before startGate.countDown()");
         startGate.countDown();
         endGate.await();
+        System.out.println("all finished");
         long end = System.nanoTime();
         return end - start;
     }
