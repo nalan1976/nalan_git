@@ -110,6 +110,8 @@ public class One2MulJoinTableTwoway {
         session.save(addr2);
         session.save(psn);
 
+
+
         session.getTransaction().commit();
 
 

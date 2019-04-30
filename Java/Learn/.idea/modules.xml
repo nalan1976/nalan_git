@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Learn.iml" filepath="$PROJECT_DIR$/Learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$//.idea/modules/spi.iml" filepath="$PROJECT_DIR$//.idea/modules/spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spi_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spi_main.iml" group="spi" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spi_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spi_test.iml" group="spi" />
     </modules>
   </component>
 </project>

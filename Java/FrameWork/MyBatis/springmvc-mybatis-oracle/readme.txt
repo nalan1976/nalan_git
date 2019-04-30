@@ -1,12 +1,20 @@
 功能：
 1）mybatis+spring+springMVC+Oracle实现了最简单的框架，各个层次结构都已经具备；
 2）利用mybatis标准方法，即*mapper.xml+POJO+Interface实现了一个插入操作；
+3）实现select，返回resultMap；
+
+
 
 技术点：
 1）mybatis多参数绑定：
     a.使用@Param传递参数：xml文件中要写明jdbcType的类型，否则参数可能会乱
 2）oracle不能使用sys用户建触发器等数据对象；需要建新用户并授予权限
 3）建立一个自增长的序列至少要3条语句
+
+疑问：
+1）二级缓存是否需要配置，如何配置？
+2）fetchSize到底怎么看是否生效？
+
 
 建表语句：
 CREATE TABLE T_TEST(
@@ -40,3 +48,6 @@ begin
 select seq_test_id.nextval into :new.id from dual;
 end tri_t_test;
 /
+
+增加一个字段PHOTO
+alter table t_test add PHOTO BLOB null;
