@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakpoints>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="2540" lineNumber="84" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2540"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-browser/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-crypto\/4.2.3.RELEASE\/spring-security-crypto-4.2.3.RELEASE.jar&lt;org.springframework.security.crypto.bcrypt(BCryptPasswordEncoder.class[BCryptPasswordEncoder"/>
+<attrib name="charEnd" value="2605"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:BCryptPasswordEncoder [line: 84] - matches(CharSequence, String)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=imooc-security-browser/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-crypto\/4.2.3.RELEASE\/spring-security-crypto-4.2.3.RELEASE.jar&lt;org.springframework.security.crypto.bcrypt(BCryptPasswordEncoder.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="5594" lineNumber="123" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="5594"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-app/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.access(ExceptionTranslationFilter.class[ExceptionTranslationFilter"/>
+<attrib name="charEnd" value="5664"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ExceptionTranslationFilter [line: 123] - doFilter(ServletRequest, ServletResponse, FilterChain)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.springframework.security.web.access.ExceptionTranslationFilter"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=imooc-security-app/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.access(ExceptionTranslationFilter.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="4231" lineNumber="124" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="4231"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-app/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.access.intercept(FilterSecurityInterceptor.class[FilterSecurityInterceptor"/>
+<attrib name="charEnd" value="4292"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:FilterSecurityInterceptor [line: 124] - invoke(FilterInvocation)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.springframework.security.web.access.intercept.FilterSecurityInterceptor"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=imooc-security-app/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.access.intercept(FilterSecurityInterceptor.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/imooc-security-demo/src/main/java/com/imooc/wiremock/MockServer.java" type="1"/>
+<marker charStart="816" lineNumber="23" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="816"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-demo/src\/main\/java&lt;com.imooc.wiremock{MockServer.java[MockServer"/>
+<attrib name="charEnd" value="837"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:MockServer [line: 23] - main(String[])"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.imooc.wiremock.MockServer"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/imooc-security-browser/src/main/java/com/imooc/security/browser/MyUserDetailsService.java" type="1"/>
+<marker charStart="1432" lineNumber="42" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1432"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-browser/src\/main\/java&lt;com.imooc.security.browser{MyUserDetailsService.java[MyUserDetailsService"/>
+<attrib name="charEnd" value="1466"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:MyUserDetailsService [line: 42] - loadUserByUsername(String)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="2"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.imooc.security.browser.MyUserDetailsService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/imooc-security-demo/src/main/java/com/imooc/web/controller/UserController.java" type="1"/>
+<marker charStart="3545" lineNumber="103" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3545"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-demo/src\/main\/java&lt;com.imooc.web.controller{UserController.java[UserController"/>
+<attrib name="charEnd" value="3645"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:UserController [line: 103] - query(UserQueryCondition, Pageable)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.imooc.web.controller.UserController"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="2917" lineNumber="70" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2917"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-demo/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.authentication(UsernamePasswordAuthenticationFilter.class[UsernamePasswordAuthenticationFilter"/>
+<attrib name="charEnd" value="2973"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:UsernamePasswordAuthenticationFilter [line: 70] - attemptAuthentication(HttpServletRequest, HttpServletResponse)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter"/>
+<attrib name="org.eclipse.jdt.internal.core.JavaModelManager.handleId" value="=imooc-security-demo/C:\/Users\/Administrator\/.m2\/repository\/org\/springframework\/security\/spring-security-web\/4.2.3.RELEASE\/spring-security-web-4.2.3.RELEASE.jar&lt;org.springframework.security.web.authentication(UsernamePasswordAuthenticationFilter.class"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/imooc-security-core/src/main/java/com/imooc/security/core/validate/code/ValidateCodeFilter.java" type="1"/>
+<marker charStart="1974" lineNumber="55" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1974"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-core/src\/main\/java&lt;com.imooc.security.core.validate.code{ValidateCodeFilter.java[ValidateCodeFilter"/>
+<attrib name="charEnd" value="2046"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="message" value="Line breakpoint:ValidateCodeFilter [line: 55] - doFilterInternal(HttpServletRequest, HttpServletResponse, FilterChain)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.imooc.security.core.validate.code.ValidateCodeFilter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/imooc-security-core/src/main/java/com/imooc/security/core/validate/code/ValidateCodeFilter.java" type="1"/>
+<marker charStart="2457" lineNumber="69" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2457"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=imooc-security-core/src\/main\/java&lt;com.imooc.security.core.validate.code{ValidateCodeFilter.java[ValidateCodeFilter"/>
+<attrib name="charEnd" value="2581"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ValidateCodeFilter [line: 69] - validate(ServletWebRequest)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="1"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.imooc.security.core.validate.code.ValidateCodeFilter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+</breakpoints>
