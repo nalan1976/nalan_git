@@ -48,12 +48,14 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 		return new BCryptPasswordEncoder();
 	}
 	
-	/*
-	 * @Bean public PersistentTokenRepository persistentTokenRepository() {
-	 * JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
-	 * tokenRepository.setDataSource(dataSource);
-	 * tokenRepository.setCreateTableOnStartup(true); return tokenRepository; }
-	 */
+	 @Bean public PersistentTokenRepository persistentTokenRepository() {
+		 JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
+		 tokenRepository.setDataSource(dataSource);
+		 //第一次运行时需要建表
+//		 tokenRepository.setCreateTableOnStartup(true); 
+		 return tokenRepository; 
+	 }
+	 
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -71,11 +73,9 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 				.successHandler(imoocAuthenticationSuccessHandler)
 				.failureHandler(imoocAuthenticationFailureHandler)
 //		http.httpBasic()
-				/*
-				 * .and() .rememberMe() .tokenRepository(persistentTokenRepository())
-				 * .tokenValiditySeconds(securityProperties.getBrowser().getRememberMeSeconds())
-				 * .userDetailsService(userDetailsService)
-				 */
+				.and() .rememberMe() .tokenRepository(persistentTokenRepository())
+				.tokenValiditySeconds(securityProperties.getBrowser().getRememberMeSeconds())
+				.userDetailsService(userDetailsService)
 			.and()
 			.authorizeRequests()
 			//授权匹配器
