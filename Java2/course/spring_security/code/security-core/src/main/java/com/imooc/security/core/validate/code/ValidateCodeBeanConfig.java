@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.imooc.security.core.properties.SecurityProperties;
+import com.imooc.security.core.validate.code.sms.DefaultSmsCodeSender;
+import com.imooc.security.core.validate.code.sms.SmsCodeSender;
 
 /**
  * @author Administrator
@@ -26,6 +28,14 @@ public class ValidateCodeBeanConfig {
 		codeGenerator.setSecurityProperties(securityProperties);
 		
 		return codeGenerator;
+	}
+
+	@Bean
+//	@ConditionalOnMissingBean(name = "smsCodeSender")
+	@ConditionalOnMissingBean(SmsCodeSender.class)
+	public SmsCodeSender smsCodeSender() {
+		
+		return new DefaultSmsCodeSender();
 	}
 
 }
