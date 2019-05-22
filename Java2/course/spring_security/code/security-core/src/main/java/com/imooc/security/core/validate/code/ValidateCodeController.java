@@ -35,6 +35,8 @@ public class ValidateCodeController {
 	
 	public static final String SESSION_KEY = "SESSION_KEY_IMAGE_CODE";
 	
+	public static final String SESSION_SMS = "SESSION_KEY_SMS_CODE";
+	
 	private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
 	
 	@Autowired
@@ -64,7 +66,7 @@ public class ValidateCodeController {
 		
 		ValidateCode smsCode = smsCodeGenerator.generator(new ServletWebRequest(request));
 		//将SESSION_KEY作为key，把imagecode放到session中
-		sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_KEY, smsCode);
+		sessionStrategy.setAttribute(new ServletWebRequest(request), SESSION_SMS, smsCode);
 		
 //		ImageIO.write(smsCode.getImage(), "JPEG", response.getOutputStream());
 		//短信供应商发送短信
