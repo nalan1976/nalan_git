@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://D:/Program Files/Python37/Lib/genericpath.py" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf7c7b2d-b435-4386-b2f9-92d045dbfe12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/GUI$Welcome.coverage" NAME="Welcome Coverage Results" MODIFIED="1552702068767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GUI$Assign_Cookies.coverage" NAME="Assign Cookies Coverage Results" MODIFIED="1556589354438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$First_Unique_Character_in_a_String.coverage" NAME="First Unique Character in a String Coverage Results" MODIFIED="1558394437999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Test_Excel.coverage" NAME="Test_Excel Coverage Results" MODIFIED="1551982508220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Reverse_Words_in_a_String.coverage" NAME="Reverse Words in a String Coverage Results" MODIFIED="1555119424101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Function.coverage" NAME="Function Coverage Results" MODIFIED="1551818904453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Sort_Array_By_Parity_II.coverage" NAME="Sort Array By Parity II Coverage Results" MODIFIED="1554514577061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$bruh.coverage" NAME="bruh Coverage Results" MODIFIED="1556756787320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Relative_Ranks.coverage" NAME="Relative Ranks Coverage Results" MODIFIED="1556320372910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Baseball_Game.coverage" NAME="Baseball Game Coverage Results" MODIFIED="1557194220752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Fair_Candy_Swap.coverage" NAME="Fair Candy Swap Coverage Results" MODIFIED="1558658045790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Range_Sum_of_BST.coverage" NAME="Range Sum of BST Coverage Results" MODIFIED="1556675587558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Student_Attendance_Record_I.coverage" NAME="Student Attendance Record I Coverage Results" MODIFIED="1555466846004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$String.coverage" NAME="String Coverage Results" MODIFIED="1551716413744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Island_Perimeter.coverage" NAME="Island Perimeter Coverage Results" MODIFIED="1558230814915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Reverse_String.coverage" NAME="Reverse String Coverage Results" MODIFIED="1555119859642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Reverse_Integer.coverage" NAME="Reverse Integer Coverage Results" MODIFIED="1553895511176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$List.coverage" NAME="List Coverage Results" MODIFIED="1551926426303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Self_Dividing_Numbers.coverage" NAME="Self Dividing Numbers Coverage Results" MODIFIED="1554253024546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Available_Captures_for_Rook.coverage" NAME="Available Captures for Rook Coverage Results" MODIFIED="1554345775346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$The_French_Helper_3.coverage" NAME="The French Helper 3 Coverage Results" MODIFIED="1551818333004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../The French Helper/TheFrenchHelper__old" />
+    <SUITE FILE_PATH="coverage/GUI$Container_With_Most_Water.coverage" NAME="Container With Most Water Coverage Results" MODIFIED="1555258585156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$N_Repeated_Element_in_Size_2N_Array.coverage" NAME="N-Repeated Element in Size 2N Array Coverage Results" MODIFIED="1553860339987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Hamming_Distance.coverage" NAME="Hamming Distance Coverage Results" MODIFIED="1554046430130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$HELLO_WORLD.coverage" NAME="HELLO WORLD Coverage Results" MODIFIED="1553562749280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Squares_of_a_Sorted_Array.coverage" NAME="Squares of a Sorted Array Coverage Results" MODIFIED="1553895517250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Utils_func.coverage" NAME="Utils_func Coverage Results" MODIFIED="1551983993988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Reverse_Integer2.coverage" NAME="Reverse Integer2 Coverage Results" MODIFIED="1557353118316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$_Robot_Return_to_Origin.coverage" NAME=" Robot Return to Origin Coverage Results" MODIFIED="1553908163403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$_Maximum_Product_of_Three_Numbers.coverage" NAME=" Maximum Product of Three Numbers Coverage Results" MODIFIED="1556759075219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Move_Zeroes.coverage" NAME="Move Zeroes Coverage Results" MODIFIED="1557969155209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Ransom_Note.coverage" NAME="Ransom Note Coverage Results" MODIFIED="1556757291801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Sum_of_Even_Numbers_After_Queries.coverage" NAME="Sum of Even Numbers After Queries Coverage Results" MODIFIED="1554766282937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Non_decreasing_Array.coverage" NAME="Non-decreasing Array Coverage Results" MODIFIED="1555609751172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Backspace_String_Compare.coverage" NAME="Backspace String Compare Coverage Results" MODIFIED="1555645270656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Class.coverage" NAME="Class Coverage Results" MODIFIED="1552190342629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+    <SUITE FILE_PATH="coverage/GUI$Arranging_Coins.coverage" NAME="Arranging Coins Coverage Results" MODIFIED="1558487232799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Minimum_Domino_Rotations_For_Equal_Row.coverage" NAME="Minimum Domino Rotations For Equal Row Coverage Results" MODIFIED="1555728830301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Unique_Morse_Code_Words.coverage" NAME="Unique Morse Code Words Coverage Results" MODIFIED="1553806190149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Remove_Outermost_Parentheses.coverage" NAME="Remove Outermost Parentheses Coverage Results" MODIFIED="1554948916578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Sort_Array_By_Parity.coverage" NAME="Sort Array By Parity Coverage Results" MODIFIED="1554508852493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Peak_Index_in_a_Mountain_Array.coverage" NAME="Peak Index in a Mountain Array Coverage Results" MODIFIED="1554768341904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Buddy_Strings.coverage" NAME="Buddy Strings Coverage Results" MODIFIED="1556333335361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Valid_Anagram.coverage" NAME="Valid Anagram Coverage Results" MODIFIED="1558393477455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$two_sum.coverage" NAME="two_sum Coverage Results" MODIFIED="1553309479354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Range_Sum_Query___Immutable.coverage" NAME="Range Sum Query - Immutable Coverage Results" MODIFIED="1558389625732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Reorder_Log_Files.coverage" NAME="Reorder Log Files Coverage Results" MODIFIED="1554862312536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Leetcode" />
+    <SUITE FILE_PATH="coverage/GUI$Tim_Hoton.coverage" NAME="Tim Hoton Coverage Results" MODIFIED="1551818317456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Excercice" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GUI" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Leetcode/Valid Anagram.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Leetcode/Range Sum Query - Immutable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Leetcode/Divisor Game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>end_event</find>
+      <find>self.label</find>
+      <find>sheet2[self.rang][1]</find>
+      <find>sheet2</find>
+      <find>dict_hardwords</find>
+      <find>Ui_Dialog</find>
+      <find>stat</find>
+      <find>stat_Ui</find>
+      <find>self.stat_dialog</find>
+      <find>stat_dialog = QDialog()</find>
+      <find>stat_dialog</find>
+      <find>checkwords</find>
+      <find>Winoflast</find>
+      <find>strShow</find>
+      <find>mylist</find>
+      <find>mylist2</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>self.labelShowWord</replace>
+      <replace>stat_dialog</replace>
+      <replace>A</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../Excercice/List.py" />
+        <option value="$PROJECT_DIR$/../Excercice/Test_Excel.py" />
+        <option value="$PROJECT_DIR$/../Excercice/Utils_func.py" />
+        <option value="$PROJECT_DIR$/Utils_func.py" />
+        <option value="$PROJECT_DIR$/../Excercice/Class.py" />
+        <option value="$PROJECT_DIR$/../Excercice/HELLO WORLD.py" />
+        <option value="$PROJECT_DIR$/QT Designer/Statistics.py" />
+        <option value="$PROJECT_DIR$/Welcome2.py" />
+        <option value="$PROJECT_DIR$/Welcome.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/two_sum.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Unique Morse Code Words.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/N-Repeated Element in Size 2N Array.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Squares of a Sorted Array.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Sort Array By Parity.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/ Robot Return to Origin.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Hamming Distance.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Reverse Integer.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Self Dividing Numbers.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Available Captures for Rook.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Sort Array By Parity II.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Peak Index in a Mountain Array.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Fibonacci Number.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Reorder Log Files.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Remove Outermost Parentheses.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Sum of Even Numbers After Queries.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Reverse Words in a String.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Reverse String.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Container With Most Water.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Student Attendance Record I.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Backspace String Compare.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Minimum Domino Rotations For Equal Row.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Delete Node in a Linked List.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Buddy Strings.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Assign Cookies.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Range Sum of BST.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/bruh.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Ransom Note.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Non-decreasing Array.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/ Maximum Product of Three Numbers.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Baseball Game.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Reverse Integer2.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Nim Game.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Move Zeroes.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Island Perimeter.py" />
+        <option value="$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi" />
+        <option value="$PROJECT_DIR$/../Leetcode/Valid Anagram.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/First Unique Character in a String.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Divisor Game.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Range Sum Query - Immutable.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Arranging Coins.py" />
+        <option value="$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Charlie.py\GUI\QT Designer" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Fair Candy Swap">
+    <configuration name="Arranging Coins" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Leetcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Leetcode/Arranging Coins.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Fair Candy Swap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Leetcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="First Unique Character in a String" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Leetcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Leetcode/First Unique Character in a String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Range Sum Query - Immutable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Leetcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Leetcode/Range Sum Query - Immutable.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Valid Anagram" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GUI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Leetcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Leetcode/Valid Anagram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Fair Candy Swap" />
+        <item itemvalue="Python.Arranging Coins" />
+        <item itemvalue="Python.First Unique Character in a String" />
+        <item itemvalue="Python.Valid Anagram" />
+        <item itemvalue="Python.Range Sum Query - Immutable" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf7c7b2d-b435-4386-b2f9-92d045dbfe12" name="Default Changelist" comment="" />
+      <created>1551229156876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551229156876</updated>
+      <workItem from="1551229161234" duration="6012000" />
+      <workItem from="1551402926553" duration="5004000" />
+      <workItem from="1551488279172" duration="2864000" />
+      <workItem from="1551491332054" duration="16898000" />
+      <workItem from="1551816869794" duration="5685000" />
+      <workItem from="1551908223687" duration="26886000" />
+      <workItem from="1552190330264" duration="1129000" />
+      <workItem from="1552444048450" duration="1141000" />
+      <workItem from="1552518513517" duration="7634000" />
+      <workItem from="1552694688209" duration="7517000" />
+      <workItem from="1553305967924" duration="4337000" />
+      <workItem from="1553399394086" duration="1239000" />
+      <workItem from="1553556283031" duration="7523000" />
+      <workItem from="1553643591910" duration="5628000" />
+      <workItem from="1553805847934" duration="1498000" />
+      <workItem from="1553819109606" duration="3580000" />
+      <workItem from="1553860271378" duration="581000" />
+      <workItem from="1553892727591" duration="4730000" />
+      <workItem from="1553994381663" duration="1627000" />
+      <workItem from="1554045652129" duration="3407000" />
+      <workItem from="1554165452163" duration="4734000" />
+      <workItem from="1554251408858" duration="2401000" />
+      <workItem from="1554333972465" duration="3453000" />
+      <workItem from="1554508798998" duration="3569000" />
+      <workItem from="1554602393981" duration="8211000" />
+      <workItem from="1554650143628" duration="4455000" />
+      <workItem from="1554766100162" duration="7672000" />
+      <workItem from="1554861788663" duration="1966000" />
+      <workItem from="1554944866800" duration="2056000" />
+      <workItem from="1555117310184" duration="2224000" />
+      <workItem from="1555258087481" duration="1463000" />
+      <workItem from="1555366194494" duration="5517000" />
+      <workItem from="1555462894023" duration="3436000" />
+      <workItem from="1555608005364" duration="6754000" />
+      <workItem from="1556064458632" duration="618000" />
+      <workItem from="1556319756498" duration="4989000" />
+      <workItem from="1556414820018" duration="1971000" />
+      <workItem from="1556587767440" duration="3149000" />
+      <workItem from="1556670533248" duration="6248000" />
+      <workItem from="1556733851961" duration="3591000" />
+      <workItem from="1557191263944" duration="3546000" />
+      <workItem from="1557351924460" duration="1749000" />
+      <workItem from="1557696899473" duration="724000" />
+      <workItem from="1557958186231" duration="4715000" />
+      <workItem from="1558388192269" duration="12515000" />
+      <workItem from="1558652878601" duration="4265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="220911000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498366" weight="0.19288956" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.501634" side_tool="true" weight="0.24659607" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3453355" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3846154" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32843137" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32843137" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32843137" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../The French Helper/TheFrenchHelper__new/Welcome.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Excercice/Test_Excel.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Excercice/Class.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/Backspace String Compare.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/bruh.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/ Maximum Product of Three Numbers.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/Move Zeroes.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/Valid Anagram.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Leetcode/First Unique Character in a String.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="magazine[j]" />
+        <watch expression="ransomNote[i]" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>i == 4</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="watch">
+      <expression>
+        <expression-string>self.rang</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(self.sheet2)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>__py_debug_temp_var_150883536</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Excercice/Function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="19" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Excercice/Class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Excercice/String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Hamming Distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="28" column="26" selection-start-line="24" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/N-Repeated Element in Size 2N Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Available Captures for Rook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Fibonacci Number.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" selection-start-line="2" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3051">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-1518449989/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1701">
+          <caret line="4229" column="12" lean-forward="true" selection-start-line="4229" selection-start-column="12" selection-end-line="4229" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Range Sum of BST.py" />
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Container With Most Water.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Delete Node in a Linked List.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Minimum Domino Rotations For Equal Row.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Non-decreasing Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Buddy Strings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Assign Cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/ Maximum Product of Three Numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Reverse Integer2.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="604" column="21" selection-start-line="604" selection-start-column="21" selection-end-line="604" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/First Unique Character in a String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Nim Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Move Zeroes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Island Perimeter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/bruh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="21" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Baseball Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="42" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Backspace String Compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Peak Index in a Mountain Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Ransom Note.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="65" lean-forward="true" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Relative Ranks.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Remove Outermost Parentheses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Reorder Log Files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Reverse Integer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Reverse String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Reverse Words in a String.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" selection-start-line="2" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Self Dividing Numbers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Sort Array By Parity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Sort Array By Parity II.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Squares of a Sorted Array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Student Attendance Record I.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/two_sum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Sum of Even Numbers After Queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="64" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/ Robot Return to Origin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Unique Morse Code Words.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Git/backup/.ssh/id_rsa.pub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Valid Anagram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Divisor Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Arranging Coins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Range Sum Query - Immutable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Leetcode/Fair Candy Swap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

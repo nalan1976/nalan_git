@@ -1,0 +1,14 @@
+tuplea = ("a", 1, "b")
+print(tuplea)
+print(tuplea[1])
+tupleb = tuplea +(1, 2, 3, 4, 5)
+print(tupleb)
+for letter in 'Python':
+	print('letter :', letter)
+for number in range(0,5):
+	print('number :',number)
+for letter in tupleb:
+	print(letter)
+	
+for l in range(0,len(tupleb)):
+	print(tupleb[l])
