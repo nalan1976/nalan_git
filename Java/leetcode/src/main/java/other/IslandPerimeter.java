@@ -54,5 +54,10 @@ public class IslandPerimeter {
         {0, 1, 0, 0},
         {1, 1, 0, 0}};
         assertEquals(16, IslandPerimeter.islandPerimeter(LAND));
+//        String test = " women human ";
+//        System.out.println(test);
+//        System.out.println(test.trim());
+//["NumArray","sumRange","sumRange","sumRange"]
+//[[[-2,0,3,-5,2,-1]],[0,2],[2,5],[0,5]]
     }
 }
