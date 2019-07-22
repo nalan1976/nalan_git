@@ -5,9 +5,10 @@ public  class BinaryTreeNode {
     public BinaryTreeNode left;
     public BinaryTreeNode right;
 
-/*    public BinaryTreeNode() {
+/*    public  BinaryTreeNode() {
     }*/
 
+//This method is not a constructor!!! Because there is a void modifier before the method's name.
     public void BinaryTreeNode(Integer x) { val = x; }
 
     public Integer getVal() {
@@ -21,7 +22,7 @@ public  class BinaryTreeNode {
     public BinaryTreeNode getLeft() {
         return left;
     }
-
+    //should be change to generics method
     public void setLeft(BinaryTreeNode left) {
         this.left = left;
     }

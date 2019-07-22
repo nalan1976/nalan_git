@@ -2,18 +2,20 @@ package easy.tree;
 
 import tools.tree.BinaryTreeNode;
 import tools.tree.TreeTools;
-
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class RangeSumOfBST {
-
-/*    class TreeNode extends BinaryTreeNode{
-        public TreeNode() {
+/**
+ * This Class must be static, otherwise the program should go wrong.
+ * I still don't know the exact reason, but the post below may be able to solve this problem
+ * https://stackoverflow.com/questions/12088880/java-class-newinstance-error
+ * */
+    public  static class TreeNode extends BinaryTreeNode{
+/*        public  TreeNode() {
             super();
-        }
-    };*/
+        }*/
+    };
 
     public static int rangeSumBST(BinaryTreeNode root, int L, int R) {
         LinkedList<BinaryTreeNode> list = new LinkedList<>();
@@ -29,7 +31,7 @@ public class RangeSumOfBST {
         }
         return sum;
     }
-/*    public static int rangeSumBST2(TreeNode root, int L, int R) {
+    public static int rangeSumBST2(TreeNode root, int L, int R) {
         if (root == null) return 0;
 
         // [3, 8]
@@ -53,16 +55,15 @@ public class RangeSumOfBST {
 
         return sum;
 
-    }*/
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    }
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, ClassNotFoundException {
         BinaryTreeNode[] nodeList = new BinaryTreeNode[7];
         TreeTools.initTreeNodeList(nodeList);
         Integer[] arr = new Integer[] {10,5,15,3,7,null,18};
         System.out.println(rangeSumBST(TreeTools.initByArray(nodeList, arr), 7, 15));   //32
 
-        BinaryTreeNode[] nodeList2 = new BinaryTreeNode[15];
+        TreeNode[] nodeList2 = new TreeNode[15];
         TreeTools.initTreeNodeList(nodeList2);
-        System.out.println(rangeSumBST(TreeTools.initByArray(nodeList2, new Integer[] {10,5,15,3,7,13,18,1,null,6,null,null,null,null,null}), 6, 10));  //23
-
+        System.out.println(rangeSumBST2(TreeTools.initByArray(nodeList2, new Integer[] {10,5,15,3,7,13,18,1,null,6,null,null,null,null,null}), 6, 10));  //23
     }
-}
+ }

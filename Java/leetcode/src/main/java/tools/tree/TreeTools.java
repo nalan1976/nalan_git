@@ -2,9 +2,7 @@ package tools.tree;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
-import java.util.LinkedList;
+
 /**
  * Implement BinaryTreeNode injection from outside, use generics
  * 1)Which generics should be used? base on function or class?
@@ -19,16 +17,7 @@ import java.util.LinkedList;
  *  4) When does the generics function need to attach like the "<T>" label before the function name?
  *
  * */
-//public class TreeTools {
 public  class TreeTools {
-
-/*
-    public static void initTreeNodeList(BinaryTreeNode[] nodeList){
-        for (int i = 0; i < nodeList.length; i++){
-            nodeList[i] = new BinaryTreeNode();
-        }
-    }
-*/
 /**
  * @Return:
  * Class<T> cls: only use for pass the generics type due to create new instance
@@ -36,12 +25,23 @@ public  class TreeTools {
 /*    public static <T> void initTreeNodeList(T[ ]  nodeList, Class<T> cls) throws IllegalAccessException, InstantiationException {
         for (int i = 0; i < nodeList.length; i++){
             nodeList[i] = cls.newInstance();
-//            nodeList[i] = (T)new Object();
         }
     }*/
     public static <T> void initTreeNodeList(T[ ]  nodeList) throws IllegalAccessException, InstantiationException {
+/*        System.out.println("getName : " + nodeList.getClass().getComponentType().getName());
+        System.out.println(nodeList.getClass().getComponentType().getSimpleName());
+        System.out.println(nodeList.getClass().getComponentType().getCanonicalName());
+        System.out.println(nodeList.getClass().getComponentType().getTypeName());
+        System.out.println(nodeList.getClass().getComponentType().getDeclaredClasses());
+        System.out.println(nodeList.getClass().getComponentType().getEnclosingClass());
+        System.out.println("getClasses" + nodeList.getClass().getComponentType().getClasses());*/
+
         for (int i = 0; i < nodeList.length; i++){
-            nodeList[i] = (T)nodeList.getClass().getComponentType().newInstance();
+            try {
+                nodeList[i] = (T)nodeList.getClass().getComponentType().newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -59,11 +59,12 @@ public  class TreeTools {
         //only for eliminating warning
         Object[] ob = null;
         Class<?>[] cl = null;
-
+/*        System.out.println("initByArray getComponentType : " + treeNodes.getClass().getComponentType());
+        System.out.println("initByArray getName : " + treeNodes.getClass().getComponentType().getName());*/
         Method setVal = treeNodes.getClass().getComponentType().getMethod("setVal", Integer.class);
         Method getVal = treeNodes.getClass().getComponentType().getMethod("getVal", cl);
-        Method setLeft = treeNodes.getClass().getComponentType().getMethod("setLeft", treeNodes.getClass().getComponentType());
-        Method setRight = treeNodes.getClass().getComponentType().getMethod("setRight", treeNodes.getClass().getComponentType());
+        Method setLeft = treeNodes.getClass().getComponentType().getMethod("setLeft", BinaryTreeNode.class);
+        Method setRight = treeNodes.getClass().getComponentType().getMethod("setRight", BinaryTreeNode.class);
 
         for ( int i = 0; i < treeNodes.length; i++ ) {
             setVal.invoke(treeNodes[i], input[i] );
